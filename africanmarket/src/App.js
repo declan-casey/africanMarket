@@ -1,39 +1,63 @@
 import './App.css';
-import React from 'react'
-import styled from 'styled-components'
-import banner from './images/banner.jpg'
+import React from 'react';
+import styled from 'styled-components';
+
+
 
 
 /*Styling Using Styled Components*/
-const StyledHeadDiv = styled.div`
-background-image: url(banner);
-background-size:cover;
-height:100vh;
-
+const StyledApp = styled.div`
+display: flex;
+flex-direction:column;
+`
+const StyledNav = styled.nav`
+font-size:25px;
+font-weight:bold;
 `
 
+const StyledHeadImg = styled.div`
+height:10vh;
+`
+
+const StyledImg = styled.img `
+  background-image: url="./images/banner.jpg";
+  height:50vh;
+
+`
 const StyledHeaderOne = styled.h1`
-color:white;
-background-color:black;
+color:black;
 text-align:center;
+background-color:lightgrey;
+
 `
 
 const StyledParagraph = styled.p`
 text-align: center;
+color:white;
+background-color:lightgrey;
+
 `
 
 const ActivateButton = styled.button`
-background-color:darkorange;
+background-color:red;
 color:white;
 border:none;
 border-radius:4px;
 display:flex;
-margin:0 auto;
+margin: 5rem auto 20rem auto;
 `
+
+const StyledCenterDiv = styled.div`
+color:black;
+background-color:lightgrey;
+
+`
+
 const StyledHeaderTwo = styled.h2`
 color:white;
-background-color:black;
+background-color:lightgrey;
 text-align:center;
+
 `
 
 
@@ -43,9 +67,13 @@ function App() {
 
   return (
 
-    <div>
-      <StyledHeadDiv>
-        <nav>African Marketplace</nav>
+    <StyledApp >
+
+      <StyledNav>African Marketplace</StyledNav>
+
+        <StyledHeadImg>
+          <StyledImg  src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Colorful-Fresh-Fruit-Background.jpg" />
+        </StyledHeadImg>
 
         <StyledHeaderOne>African Marketplace</StyledHeaderOne>
 
@@ -55,18 +83,20 @@ TO GROW OUT OF POVERTY.</StyledParagraph>
 
         <ActivateButton>ACTIVATE</ActivateButton>
 
-        {/* <button>LEARN MORE</button> */}
-      
-      </StyledHeadDiv>
 
-      <div>
+
+
+      <StyledCenterDiv>
+
         <StyledHeaderTwo>ARCU ALIQUET VEL LOBORTIS ATA NISL
 EGET AUGUE AMET ALIQUET NISL CEP DONEC</StyledHeaderTwo>
+
         <StyledParagraph>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
 fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</StyledParagraph>
-      </div>
 
-    </div>
+      </StyledCenterDiv>
+      
+    </StyledApp>
 
   );
 
