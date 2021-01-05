@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { slide as Hamburger } from "react-burger-menu";
-// import  from './images/pic01.jpg'
-// import  from './images/pic02.jpg'
-// import GalleryThreeImg from './images/pic03.jpg'
+import { slide as Hamburger } from "react-burger-menu";
+import BannerImg from '../images/banner.jpg'
+import GalleryOneImg from '../images/pic01.jpg'
+import GalleryTwoImg from '../images/pic02.jpg'
+import GalleryThreeImg from '../images/pic03.jpg'
 
 
 
@@ -408,13 +409,13 @@ function Home() {
       <div>
         <Nav>
           <Menu right>
-            {/* <Hamburger>
+            <Hamburger>
               <A className="menu-item" href="/">Home</A>
               <A className="menu-item" href="/about">About</A>
               <A className="menu-item" href="/team">Meet The Team</A>
               <A className="menu-item" href="/signup">Sign Up</A>
               <A className="menu-item" href="/login">Log In </A>
-            </Hamburger> */}
+            </Hamburger>
           </Menu>
         </Nav>
       </div>
@@ -450,7 +451,7 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Para
       <Gallery>
 
         <GalleryOne>
-          <GalleryImg />
+          <GalleryImg src={GalleryOneImg}/>
           <GalleryTextSpan>
           <GalleryHeadOne>MAGNA PRIMIS LOBORTIS
 SED ULLAMCORPER</GalleryHeadOne>
@@ -466,13 +467,13 @@ SED ULLAMCORPER</GalleryHeadOne>
 ELEMENTUM MAGNA</GalleryHeadTwo>
             <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
           </GalleryTextSpan>
-            <GalleryImg />
+            <GalleryImg src={GalleryTwoImg} />
         </GalleryTwo>
       
 
 
         <GalleryThree>
-          <GalleryImgThree />
+          <GalleryImgThree src={GalleryThreeImg} />
           <GalleryTextSpan>
             <GalleryHeadThree>AUGUE ELEIFEND ALIQUETSED CONDIMENTUM</GalleryHeadThree>
             <GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>

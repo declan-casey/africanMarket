@@ -5,13 +5,14 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Home />
-        <Header />
-        <OwnerRegister />
+        {/* <Header />
+        <OwnerRegister /> */}
       </div>
     </Router>
   );
