@@ -1,6 +1,10 @@
 import './App.css';
 import React from 'react';
 import styled from 'styled-components';
+import BannerImg from './images/banner.jpg'
+import GalleryOneImg from './images/pic01.jpg'
+import GalleryTwoImg from './images/pic02.jpg'
+import GalleryThreeImg from './images/pic03.jpg'
 
 
 
@@ -23,7 +27,6 @@ width:100%;
 
 const ImgTop = styled.img `
   height:50vh;
-
 
 `
 const HeaderOne = styled.h1`
@@ -110,7 +113,7 @@ letter-spacing: 2px;
 
 `
 
-const GalleryOneImg = styled.img`
+const GalleryImg = styled.img`
 height:30vh;
 width:auto;
 
@@ -313,7 +316,7 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Para
 
         <GalleryOne>
 
-          <GalleryOneImg src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Colorful-Fresh-Fruit-Background.jpg"/>
+          <GalleryImg src={GalleryOneImg}/>
 
           <GalleryHeadOne>MAGNA PRIMIS LOBORTIS
 SED ULLAMCORPER</GalleryHeadOne>
@@ -329,18 +332,18 @@ ELEMENTUM MAGNA</GalleryHeadTwo>
 
           <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
 
-          <GalleryOneImg src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Colorful-Fresh-Fruit-Background.jpg"/>
+          <GalleryImg src={GalleryTwoImg}/>
 
         </GalleryTwo>
       
         <GalleryThree>
 
-        <GalleryOneImg src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Colorful-Fresh-Fruit-Background.jpg"/>
+          <GalleryImg src={GalleryThreeImg}/>
 
-        `<GalleryHeadThree>AUGUE ELEIFEND ALIQUET
-SED CONDIMENTUM</GalleryHeadThree>
+          <GalleryHeadThree>AUGUE ELEIFEND ALIQUETSED CONDIMENTUM</GalleryHeadThree>
 
           <GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
+          
         </GalleryThree>
 
       </Gallery>
