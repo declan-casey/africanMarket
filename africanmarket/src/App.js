@@ -107,7 +107,7 @@ align-items:center;
 justify-content:center;
 flex-direction:row;
 width:100%;
-background-color:#2D343C;
+background-color:#373f49;
 border-bottom:solid 1px #293037;
 letter-spacing: 2px;
 
@@ -125,7 +125,7 @@ text-align:left;
 font-weight:bold;
 font-size:2.5rem;
 letter-spacing:2px;
-width:25%;
+width:75%;
 `
 
 const GalleryParOne = styled.p`
@@ -133,7 +133,7 @@ color:white;
 text-align:left;
 font-size:1.2rem;
 letter-spacing:2px;
-width:25%;
+width:75%;
 `
 
 const GalleryTwo = styled.div`
@@ -142,8 +142,8 @@ align-items:left;
 justify-content:center;
 flex-direction:row;
 width:100%;
-background-color:#2D343C;
-border-bottom:solid 1px #293037;
+background-color:#2c333a;
+border-bottom:solid 1px #2c333a;
 
 `
 
@@ -153,7 +153,7 @@ text-align:left;
 font-weight:bold;
 font-size:2.5rem;
 letter-spacing:2px;
-width:25%;
+width:75%;
 `
 
 const GalleryParTwo = styled.p`
@@ -161,7 +161,7 @@ color:white;
 text-align:left;
 font-size:1.2rem;
 letter-spacing:2px;
-width:25%;
+width:75%;
 `
 
 const GalleryThree = styled.div`
@@ -170,7 +170,7 @@ align-items:center;
 justify-content:center;
 flex-direction:row;
 width:100%;
-background-color:#2D343C;
+background-color:#21262c;
 `
 
 const GalleryHeadThree = styled.h2`
@@ -179,7 +179,7 @@ text-align:left;
 font-weight:bold;
 font-size:2.5rem;
 letter-spacing:2px;
-width:25%;
+width:75%;
 `
 
 const GalleryParThree = styled.p`
@@ -187,7 +187,13 @@ color:white;
 text-align:left;
 font-size:1.2rem;
 letter-spacing:2px;
-width:25%;
+width:75%;
+`
+
+const GalleryTextSpan = styled.span`
+display:flex;
+flex-direction:column;
+margin-left:8rem;
 `
 
 const BottomDiv = styled.div`
@@ -313,37 +319,30 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Para
       </CenterDiv>
 
       <Gallery>
-
         <GalleryOne>
-
           <GalleryImg src={GalleryOneImg}/>
-
+          <GalleryTextSpan>
           <GalleryHeadOne>MAGNA PRIMIS LOBORTIS
 SED ULLAMCORPER</GalleryHeadOne>
-
           <GalleryParOne>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParOne>
-
+          </GalleryTextSpan>
         </GalleryOne>
 
         <GalleryTwo>
-
+        <GalleryTextSpan>
           <GalleryHeadTwo>TORTOR DOLORE FEUGIAT
 ELEMENTUM MAGNA</GalleryHeadTwo>
-
           <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
-
+          </GalleryTextSpan>
           <GalleryImg src={GalleryTwoImg}/>
-
         </GalleryTwo>
       
         <GalleryThree>
-
           <GalleryImg src={GalleryThreeImg}/>
-
-          <GalleryHeadThree>AUGUE ELEIFEND ALIQUETSED CONDIMENTUM</GalleryHeadThree>
-
-          <GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
-          
+        <GalleryTextSpan>
+            <GalleryHeadThree>AUGUE ELEIFEND ALIQUETSED CONDIMENTUM</GalleryHeadThree>
+            <GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
+        </GalleryTextSpan>
         </GalleryThree>
 
       </Gallery>
