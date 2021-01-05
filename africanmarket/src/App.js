@@ -110,8 +110,13 @@ letter-spacing: 2px;
 `
 
 const GalleryImg = styled.img`
-height:30vh;
+height:40vh;
 width:auto;
+
+`
+const GalleryImgThree = styled.img`
+height:auto;
+width:40%;
 
 `
 
@@ -134,7 +139,7 @@ width:75%;
 
 const GalleryTwo = styled.div`
 display:flex;
-align-items:left;
+align-items:center;
 justify-content:center;
 flex-direction:row;
 width:100%;
@@ -201,12 +206,26 @@ background-color: #51528F;
 padding:5rem;
 `
 
+const BottomDivHeadings = styled.h2`
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:2.5rem;
+letter-spacing: 2px;
+color:white;
+padding-bottom:2rem;
+
+`
+
 const BottomDivHeading = styled.h2`
 display:flex;
 align-items:center;
 justify-content:center;
 font-size:2.5rem;
 letter-spacing: 2px;
+color:white;
+padding-bottom:2rem;
+border-bottom:solid 1px #2c333a;
 `
 
 const BottomDivPar = styled.p`
@@ -215,15 +234,28 @@ align-items:center;
 justify-content:center;
 font-size:1.2rem;
 letter-spacing:2px;
+color:white;
 
 `
 
 const BottomDivContent = styled.h2`
 display:flex;
 align-items:center;
-justify-content:center;
+flex-direction:row;
+flex-wrap:wrap;
 letter-spacing: 2px;
+justify-content:center;
+
 `
+
+const BottomDivCard = styled.div`
+width:45%;
+height: 30%;
+text-align:center;
+background-color:#494a83;
+border: solid .1px #535493;
+`
+
 
 const FooterOptions = styled.div`
 display:flex;
@@ -239,11 +271,13 @@ const FooterContent = styled.div`
 display:flex;
 flex-direction:column;
 width:25%;
+margin-right:25%;
 color:white;
 
 `
 const FooterButtons = styled.div`
 display:flex;
+margin-left:25%;
 flex-direction:column;
 `
 
@@ -258,13 +292,26 @@ font-size:1.2rem;
 letter-spacing:2px;
 `
 
+const ActivateButtonFoot = styled.button`
+background-color:#DE6852;
+color:white;
+border:none;
+border-radius:4px;
+font-size:15px;
+padding:15% 15%;
+display:flex;
+letter-spacing:2px;
+margin: 3rem auto 0rem auto;
+
+`
+
 const LearnButton = styled.button`
 background-color:black;
 color:white;
 border:none;
 border-radius:4px;
 font-size:15px;
-padding:1rem 1.5rem;
+padding:5% 5%;
 display:flex;
 letter-spacing:2px;
 margin: 3rem auto 3rem auto;
@@ -272,18 +319,6 @@ border: 2px solid white;
 
 `
 
-const ActivateButtonFoot = styled.button`
-background-color:#DE6852;
-color:white;
-border:none;
-border-radius:4px;
-font-size:15px;
-padding:1rem 1.5rem;
-display:flex;
-letter-spacing:2px;
-margin: 3rem auto 0rem auto;
-
-`
 
 const Social = styled.div`
 
@@ -293,28 +328,36 @@ function App() {
 
   return (
 
-    <StyledApp >
+
+    <StyledApp>
+
+
       <TopOfPage>
+
         <Nav>African Marketplace</Nav>
         <HeaderOne>African Marketplace</HeaderOne>  
         <Paragraph>SAUTI AFRICA EMPOWERS SMALL BUSINESS OWNERS, PARTICULARLY WOMEN,
 TO IMPROVE THEIR BUSINESS AND ECONOMIC OPPORTUNITIES
 TO GROW OUT OF POVERTY.</Paragraph>
         <ActivateButton>ACTIVATE</ActivateButton>
-        </TopOfPage>
+
+      </TopOfPage>
+
 
 
       <CenterDiv>
 
         <HeaderTwo>ARCU ALIQUET VEL LOBORTIS ATA NISL
 EGET AUGUE AMET ALIQUET NISL CEP DONEC</HeaderTwo>
-
         <ParagraphTwo>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
 fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</ParagraphTwo>
 
       </CenterDiv>
 
+
+
       <Gallery>
+
         <GalleryOne>
           <GalleryImg src={GalleryOneImg}/>
           <GalleryTextSpan>
@@ -324,61 +367,94 @@ SED ULLAMCORPER</GalleryHeadOne>
           </GalleryTextSpan>
         </GalleryOne>
 
+
+
         <GalleryTwo>
-        <GalleryTextSpan>
-          <GalleryHeadTwo>TORTOR DOLORE FEUGIAT
+          <GalleryTextSpan>
+            <GalleryHeadTwo>TORTOR DOLORE FEUGIAT
 ELEMENTUM MAGNA</GalleryHeadTwo>
-          <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
+            <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
           </GalleryTextSpan>
-          <GalleryImg src={GalleryTwoImg}/>
+            <GalleryImg src={GalleryTwoImg}/>
         </GalleryTwo>
       
+
+
         <GalleryThree>
-          <GalleryImg src={GalleryThreeImg}/>
-        <GalleryTextSpan>
+          <GalleryImgThree src={GalleryThreeImg}/>
+          <GalleryTextSpan>
             <GalleryHeadThree>AUGUE ELEIFEND ALIQUETSED CONDIMENTUM</GalleryHeadThree>
             <GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
-        </GalleryTextSpan>
+          </GalleryTextSpan>
         </GalleryThree>
 
       </Gallery>
 
+
+
       <BottomDiv>
 
         <BottomDivHeading>ACCUMSAN MUS TORTOR NUNC ALIQUET</BottomDivHeading>
-
         <BottomDivPar>ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
 fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</BottomDivPar>
-      
-      <BottomDivContent>
+        <BottomDivContent>
 
-      </BottomDivContent>
+          <BottomDivCard>
+            <BottomDivHeadings>ARCU ACCUMSAN</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>AC AUGUE EGET</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>MUS SCELERISQUE</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>MAURIS IMPERDIET</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>AENEAN PRIMIS</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>TORTOR UT</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+        </BottomDivContent>
 
       </BottomDiv>
+
+
 
       <FooterOptions>
 
         <FooterContent>
-
-        <FooterHead>ARCUE UT VEL COMMODO</FooterHead>
-
-        <FooterPar>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</FooterPar>
-
+          <FooterHead>ARCUE UT VEL COMMODO</FooterHead>
+          <FooterPar>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</FooterPar>
         </FooterContent>
 
         <FooterButtons>
-          
-      <ActivateButtonFoot>ACTIVATE</ActivateButtonFoot>
-
-      <LearnButton>LEARN MORE</LearnButton>
-
+          <ActivateButtonFoot>ACTIVATE</ActivateButtonFoot>
+          <LearnButton>LEARN MORE</LearnButton>
         </FooterButtons>
 
       </FooterOptions>
 
 
+
       <Social></Social>
       
+
+
     </StyledApp>
 
   );
