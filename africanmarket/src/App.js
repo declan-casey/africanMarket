@@ -1,9 +1,11 @@
 import './App.css';
 import React from 'react';
 import styled from 'styled-components';
+import { slide as Hamburger } from "react-burger-menu";
 import GalleryOneImg from './images/pic01.jpg'
 import GalleryTwoImg from './images/pic02.jpg'
 import GalleryThreeImg from './images/pic03.jpg'
+
 
 
 
@@ -12,15 +14,40 @@ const StyledApp = styled.div`
 display: flex;
 flex-direction:column;
 `
+
 const Nav = styled.nav`
-font-size:25px;
+color:white;
+display:flex;
+align-items:right;
+
+`
+
+const A = styled.a`
+color:white;
+background-color:blue;
+padding:2rem;
+font-size:1.6rem;
+text-align:right;
+`
+
+const Menu = styled.div`
+display:flex;
+position:right;
+
+`
+
+const NavTitle = styled.nav`
+font-size:30px;
 font-weight:bold;
 color:white;
+background-color:#2c333a;
+padding:2rem 0rem 2rem 1.5rem;
 `
 
 const TopOfPage = styled.div`
 background:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Ffruit%2Ffruit-08.jpg&f=1&nofb=1') no-repeat center;
-width:100%;
+width:auto;
+padding:0 0 11% 0;
 background-size:cover;
 `
 
@@ -67,7 +94,7 @@ margin: 5rem auto 20rem auto;
 const CenterDiv = styled.div`
 color:black;
 background-color:#55AFA5;
-padding:5rem;
+padding:12rem;
 
 `
 
@@ -132,13 +159,14 @@ letter-spacing: 2px;
 `
 
 const GalleryImg = styled.img`
-height:60vh;
+height:50vh;
 width:auto;
-
+background-position:cover;
 `
 const GalleryImgThree = styled.img`
-height:auto;
-width:40%;
+height:110vh;
+width:auto;
+position:static;
 
 `
 
@@ -167,6 +195,7 @@ flex-direction:row;
 width:100%;
 background-color:#2c333a;
 border-bottom:solid 1px #2c333a;
+
 
 `
 
@@ -274,8 +303,8 @@ justify-content:center;
 `
 
 const BottomDivCard = styled.div`
-width:40%;
-height: 30%;
+width:45%;
+height: 75%;
 text-align:center;
 background-color:#494a83;
 border: solid .1px #535493;
@@ -387,11 +416,27 @@ function App() {
 
 
     <StyledApp>
+      <div>
+
+        <Nav>
+          <Menu>
+            <Hamburger>
+              <A className="menu-item" href="/">Home</A>
+              <A className="menu-item" href="/about">About</A>
+              <A className="menu-item" href="/team">Meet The Team</A>
+              <A className="menu-item" href="/signup">Sign Up</A>
+              <A className="menu-item" href="/login">Log In </A>
+            </Hamburger>
+
+          </Menu>
+
+        </Nav>
+
+      </div>
+      <NavTitle>African Marketplace</NavTitle>
 
 
       <TopOfPage>
-
-        <Nav>African Marketplace</Nav>
         <HeaderOne>African Marketplace</HeaderOne>  
         <Paragraph>SAUTI AFRICA EMPOWERS SMALL BUSINESS OWNERS, PARTICULARLY WOMEN,
 TO IMPROVE THEIR BUSINESS AND ECONOMIC OPPORTUNITIES
