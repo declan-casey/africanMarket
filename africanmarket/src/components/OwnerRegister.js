@@ -4,21 +4,24 @@ import { useHistory } from "react-router-dom";
 // import styled from "styled-components";
 import registerSchema from "../registration/registerSchema";
 import * as yup from "yup";
+import styled from 'styled-components';
 
 const initialFormValues = {
     username: "",
     password: "",
     store_name: "",
     store_category: "",
+    roleId: 0
 };
 const initialFormErrors = {
     username: "",
     password: "",
     store_name: "",
     store_category: "",
+    roleId: ''
 };
 
-const Register = () => {
+const OwnerRegister = () => {
   const history = useHistory();
   const [formValues, setFormValues] = useState(initialFormValues);
   const [formErrors, setFormErrors] = useState(initialFormErrors);
@@ -67,6 +70,7 @@ const Register = () => {
       password: formValues.password,
       store_category: "",
     };
+    
     if (formValues.roleId === "1") {
       axios
         .post(
@@ -183,9 +187,8 @@ const Register = () => {
                     />
                 </label>
                 <button disabled={disabled}>Submit</button>
-                <label>
-                    <br />
-                    <h3>Only if owner:</h3>
+                {/* {formValues.roleId ? 2 : <OwnerOnly id='hidden' />} */}
+                <OwnerOnly>
                         <div className="label">
                             <h2>Store Name:</h2>
                             <input
@@ -196,8 +199,8 @@ const Register = () => {
                             onChange={handleChange}
                             />
                         </div>
-                </label>
-                <label>
+                </OwnerOnly>
+                <OwnerOnly>
                     <div className='label'>
                         <h2>Category:</h2>
                         <div className="label">
@@ -210,10 +213,17 @@ const Register = () => {
                             />
                         </div>
                     </div>
-                </label>
+                </OwnerOnly>
                 
             </form>
         </div>
   );
 };
-export default Register;
+let OwnerOnly = styled.label`
+    width: 100px;
+    #hidden {
+        display: none;
+    }
+`
+export default OwnerRegister;
+

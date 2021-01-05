@@ -10,6 +10,8 @@ const registerSchema = yup.object().shape({
         .string()
         .required('password is required')
         .min(8, 'password must be 8+ characters'),
+
+        // make required if roleId == 2
     store_name: yup
         .string(),
     store_category: yup

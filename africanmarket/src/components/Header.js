@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
-import Register from './Register';
+import Register from './OwnerRegister';
 // import Home from './Home';
 import Login from './Login';
 // import styled from 'styled-components';
