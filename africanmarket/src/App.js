@@ -33,6 +33,8 @@ border-bottom:solid 3px black;
 width:50%;
 margin:0 auto;
 background-color:lightgrey;
+font-weight:bold;
+font-size:4rem;
 
 `
 
@@ -41,14 +43,17 @@ text-align: center;
 color:black;
 width:65%;
 margin: 0 auto;
+font-size:1.2rem;
+letter-spacing:2px;
 
 `
 
 const ActivateButton = styled.button`
-background-color:red;
+background-color:#DE6852;
 color:white;
 border:none;
 border-radius:4px;
+letter-spacing:2px;
 font-size:15px;
 padding:1rem 1.5rem;
 display:flex;
@@ -59,7 +64,8 @@ margin: 5rem auto 20rem auto;
 
 const CenterDiv = styled.div`
 color:black;
-background-color:#00FFFF;
+background-color:#55AFA5;
+padding:5rem;
 
 `
 
@@ -69,6 +75,8 @@ width:65%;
 margin: 0 auto;
 text-align:center;
 border-bottom: solid 1.5px darkgrey;
+font-weight:bold;
+font-size:2.5rem;
 
 `
 
@@ -77,7 +85,8 @@ text-align: center;
 color:white;
 width:65%;
 margin: 0 auto;
-
+font-size:1.2rem;
+letter-spacing:2px;
 `
 
 const Gallery = styled.div`
@@ -92,18 +101,58 @@ align-items:center;
 justify-content:center;
 flex-direction:column;
 width:100%;
-background-color:lightgrey;
+padding:2rem;
+background-color:#2D343C;
+border-bottom:solid 1px #293037;
 
+`
+
+const GalleryHeadOne = styled.h2`
+color:white;
+margin:0 0 0 70%;
+text-align:left;
+font-weight:bold;
+font-size:2.5rem;
+letter-spacing:2px;
+width:25%;
+`
+const GalleryParOne = styled.p`
+color:white;
+margin:0 0 0 70%;
+text-align:left;
+font-size:1.2rem;
+letter-spacing:2px;
+width:25%;
 `
 
 const GalleryTwo = styled.div`
 display:flex;
-align-items:center;
+align-items:left;
 justify-content:center;
 flex-direction:column;
 width:100%;
-background-color:darkgrey;
+padding:2rem;
+background-color:#2D343C;
+border-bottom:solid 1px #293037;
 
+`
+
+const GalleryHeadTwo = styled.h2`
+color:white;
+margin:0 50% 0 0;
+text-align:left;
+font-weight:bold;
+font-size:2.5rem;
+letter-spacing:2px;
+width:25%;
+`
+const GalleryParTwo = styled.p`
+color:white;
+margin:0 50% 0 0;
+text-align:left;
+font-size:1.2rem;
+letter-spacing:2px;
+width:25%;
 `
 
 const GalleryThree = styled.div`
@@ -112,7 +161,26 @@ align-items:center;
 justify-content:center;
 flex-direction:column;
 width:100%;
-background-color:darkslategray;
+padding:2rem;
+background-color:#2D343C;
+`
+
+const GalleryHeadThree = styled.h2`
+color:white;
+margin:0 0 0 70%;
+text-align:left;
+font-weight:bold;
+font-size:2.5rem;
+letter-spacing:2px;
+width:25%;
+`
+const GalleryParThree = styled.p`
+color:white;
+margin:0 0 0 70%;
+text-align:left;
+font-size:1.2rem;
+letter-spacing:2px;
+width:25%;
 `
 
 const BottomDiv = styled.div`
@@ -120,18 +188,23 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
+background-color: #51528F;
+padding:5rem;
 `
 
 const BottomDivHeading = styled.h2`
 display:flex;
 align-items:center;
 justify-content:center;
+font-size:2.5rem;
 `
 
 const BottomDivPar = styled.p`
 display:flex;
 align-items:center;
 justify-content:center;
+font-size:1.2rem;
+letter-spacing:2px;
 `
 
 const BottomDivContent = styled.h2`
@@ -162,11 +235,13 @@ display:flex;
 flex-direction:column;
 `
 const FooterHead = styled.h2`
-
+font-weight:bold;
+font-size:2.5rem;
 `
 
 const FooterPar = styled.p`
-
+font-size:1.2rem;
+letter-spacing:2px;
 `
 
 const LearnButton = styled.button`
@@ -177,18 +252,20 @@ border-radius:4px;
 font-size:15px;
 padding:1rem 1.5rem;
 display:flex;
+letter-spacing:2px;
 margin: 3rem auto 3rem auto;
 border: 2px solid white;
 
 `
 const ActivateButtonFoot = styled.button`
-background-color:red;
+background-color:#DE6852;
 color:white;
 border:none;
 border-radius:4px;
 font-size:15px;
 padding:1rem 1.5rem;
 display:flex;
+letter-spacing:2px;
 margin: 3rem auto 0rem auto;
 
 `
@@ -227,21 +304,21 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Para
       <Gallery>
 
         <GalleryOne>
-          <h2>MAGNA PRIMIS LOBORTIS
-SED ULLAMCORPER</h2>
-<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+          <GalleryHeadOne>MAGNA PRIMIS LOBORTIS
+SED ULLAMCORPER</GalleryHeadOne>
+<GalleryParOne>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParOne>
         </GalleryOne>
 
         <GalleryTwo>
-          <h2>TORTOR DOLORE FEUGIAT
-ELEMENTUM MAGNA</h2>
-<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+          <GalleryHeadTwo>TORTOR DOLORE FEUGIAT
+ELEMENTUM MAGNA</GalleryHeadTwo>
+<GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
         </GalleryTwo>
       
         <GalleryThree>
-        `<h2>AUGUE ELEIFEND ALIQUET
-SED CONDIMENTUM</h2>
-<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+        `<GalleryHeadThree>AUGUE ELEIFEND ALIQUET
+SED CONDIMENTUM</GalleryHeadThree>
+<GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
         </GalleryThree>
 
       </Gallery>
@@ -267,7 +344,7 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Bott
         <FooterButtons>
       <ActivateButtonFoot>ACTIVATE</ActivateButtonFoot>
 
-      <LearnButton>Learn More</LearnButton>
+      <LearnButton>LEARN MORE</LearnButton>
 
         </FooterButtons>
 
