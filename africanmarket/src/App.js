@@ -38,7 +38,7 @@ background-color:lightgrey;
 
 const Paragraph = styled.p`
 text-align: center;
-color:white;
+color:black;
 width:65%;
 margin: 0 auto;
 
@@ -69,6 +69,14 @@ width:65%;
 margin: 0 auto;
 text-align:center;
 border-bottom: solid 1.5px darkgrey;
+
+`
+
+const ParagraphTwo = styled.p`
+text-align: center;
+color:white;
+width:65%;
+margin: 0 auto;
 
 `
 
@@ -211,8 +219,8 @@ TO GROW OUT OF POVERTY.</Paragraph>
         <HeaderTwo>ARCU ALIQUET VEL LOBORTIS ATA NISL
 EGET AUGUE AMET ALIQUET NISL CEP DONEC</HeaderTwo>
 
-        <Paragraph>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Paragraph>
+        <ParagraphTwo>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</ParagraphTwo>
 
       </CenterDiv>
 
