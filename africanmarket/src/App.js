@@ -1,11 +1,9 @@
 import './App.css';
 import React from 'react';
 import styled from 'styled-components';
-import BannerImg from './images/banner.jpg'
 import GalleryOneImg from './images/pic01.jpg'
 import GalleryTwoImg from './images/pic02.jpg'
 import GalleryThreeImg from './images/pic03.jpg'
-
 
 
 
@@ -17,27 +15,25 @@ flex-direction:column;
 const Nav = styled.nav`
 font-size:25px;
 font-weight:bold;
+color:white;
 `
 
-const HeadImg = styled.img`
-height:100vh;
+const TopOfPage = styled.div`
+background:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Ffruit%2Ffruit-08.jpg&f=1&nofb=1') no-repeat center;
 width:100%;
-
+background-size:cover;
 `
 
-const ImgTop = styled.img `
-  height:50vh;
 
-`
 const HeaderOne = styled.h1`
-color:black;
+color:white;
 text-align:center;
-border-top:solid 3px black;
-border-bottom:solid 3px black;
+border-top:solid 3px white;
+border-bottom:solid 3px white;
 width:60%;
-margin:5rem auto 0rem auto;
+margin:15rem auto 0rem auto;
 padding:1rem 0;
-background-color:lightgrey;
+background-color:none;
 font-weight:bold;
 font-size:4rem;
 
@@ -45,7 +41,7 @@ font-size:4rem;
 
 const Paragraph = styled.p`
 text-align: center;
-color:black;
+color:white;
 width:65%;
 margin: 0 auto;
 font-size:1.2rem;
@@ -234,7 +230,8 @@ display:flex;
 align-items:center;
 justify-content:center;
 padding: 3rem;
-background-color:black;
+background-color:#16191d;
+
 `
 
 
@@ -297,16 +294,15 @@ function App() {
   return (
 
     <StyledApp >
-
-      <Nav>African Marketplace</Nav>
-
-        <HeaderOne>African Marketplace</HeaderOne>
-
+      <TopOfPage>
+        <Nav>African Marketplace</Nav>
+        <HeaderOne>African Marketplace</HeaderOne>  
         <Paragraph>SAUTI AFRICA EMPOWERS SMALL BUSINESS OWNERS, PARTICULARLY WOMEN,
 TO IMPROVE THEIR BUSINESS AND ECONOMIC OPPORTUNITIES
 TO GROW OUT OF POVERTY.</Paragraph>
-
         <ActivateButton>ACTIVATE</ActivateButton>
+        </TopOfPage>
+
 
       <CenterDiv>
 
@@ -382,7 +378,7 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Bott
 
 
       <Social></Social>
-
+      
     </StyledApp>
 
   );
