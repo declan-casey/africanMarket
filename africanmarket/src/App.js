@@ -15,8 +15,9 @@ font-size:25px;
 font-weight:bold;
 `
 
-const HeadImg = styled.div`
-height:10vh;
+const HeadImg = styled.img`
+height:100vh;
+width:100%;
 
 `
 
@@ -30,8 +31,9 @@ color:black;
 text-align:center;
 border-top:solid 3px black;
 border-bottom:solid 3px black;
-width:50%;
-margin:0 auto;
+width:60%;
+margin:5rem auto 0rem auto;
+padding:1rem 0;
 background-color:lightgrey;
 font-weight:bold;
 font-size:4rem;
@@ -77,6 +79,7 @@ text-align:center;
 border-bottom: solid 1.5px darkgrey;
 font-weight:bold;
 font-size:2.5rem;
+letter-spacing: 2px;
 
 `
 
@@ -99,26 +102,31 @@ const GalleryOne = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
-flex-direction:column;
+flex-direction:row;
 width:100%;
-padding:2rem;
 background-color:#2D343C;
 border-bottom:solid 1px #293037;
+letter-spacing: 2px;
+
+`
+
+const GalleryOneImg = styled.img`
+height:30vh;
+width:auto;
 
 `
 
 const GalleryHeadOne = styled.h2`
 color:white;
-margin:0 0 0 70%;
 text-align:left;
 font-weight:bold;
 font-size:2.5rem;
 letter-spacing:2px;
 width:25%;
 `
+
 const GalleryParOne = styled.p`
 color:white;
-margin:0 0 0 70%;
 text-align:left;
 font-size:1.2rem;
 letter-spacing:2px;
@@ -129,9 +137,8 @@ const GalleryTwo = styled.div`
 display:flex;
 align-items:left;
 justify-content:center;
-flex-direction:column;
+flex-direction:row;
 width:100%;
-padding:2rem;
 background-color:#2D343C;
 border-bottom:solid 1px #293037;
 
@@ -139,16 +146,15 @@ border-bottom:solid 1px #293037;
 
 const GalleryHeadTwo = styled.h2`
 color:white;
-margin:0 50% 0 0;
 text-align:left;
 font-weight:bold;
 font-size:2.5rem;
 letter-spacing:2px;
 width:25%;
 `
+
 const GalleryParTwo = styled.p`
 color:white;
-margin:0 50% 0 0;
 text-align:left;
 font-size:1.2rem;
 letter-spacing:2px;
@@ -159,24 +165,22 @@ const GalleryThree = styled.div`
 display:flex;
 align-items:center;
 justify-content:center;
-flex-direction:column;
+flex-direction:row;
 width:100%;
-padding:2rem;
 background-color:#2D343C;
 `
 
 const GalleryHeadThree = styled.h2`
 color:white;
-margin:0 0 0 70%;
 text-align:left;
 font-weight:bold;
 font-size:2.5rem;
 letter-spacing:2px;
 width:25%;
 `
+
 const GalleryParThree = styled.p`
 color:white;
-margin:0 0 0 70%;
 text-align:left;
 font-size:1.2rem;
 letter-spacing:2px;
@@ -197,6 +201,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 font-size:2.5rem;
+letter-spacing: 2px;
 `
 
 const BottomDivPar = styled.p`
@@ -205,13 +210,14 @@ align-items:center;
 justify-content:center;
 font-size:1.2rem;
 letter-spacing:2px;
+
 `
 
 const BottomDivContent = styled.h2`
 display:flex;
 align-items:center;
 justify-content:center;
-
+letter-spacing: 2px;
 `
 
 const FooterOptions = styled.div`
@@ -234,9 +240,11 @@ const FooterButtons = styled.div`
 display:flex;
 flex-direction:column;
 `
+
 const FooterHead = styled.h2`
 font-weight:bold;
 font-size:2.5rem;
+letter-spacing: 2px;
 `
 
 const FooterPar = styled.p`
@@ -257,6 +265,7 @@ margin: 3rem auto 3rem auto;
 border: 2px solid white;
 
 `
+
 const ActivateButtonFoot = styled.button`
 background-color:#DE6852;
 color:white;
@@ -269,19 +278,18 @@ letter-spacing:2px;
 margin: 3rem auto 0rem auto;
 
 `
+
 const Social = styled.div`
 
 `
 
 function App() {
+
   return (
+
     <StyledApp >
 
       <Nav>African Marketplace</Nav>
-
-        <HeadImg>
-          {/* <ImgTop  src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Colorful-Fresh-Fruit-Background.jpg" /> */}
-        </HeadImg>
 
         <HeaderOne>African Marketplace</HeaderOne>
 
@@ -304,26 +312,41 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Para
       <Gallery>
 
         <GalleryOne>
+
+          <GalleryOneImg src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Colorful-Fresh-Fruit-Background.jpg"/>
+
           <GalleryHeadOne>MAGNA PRIMIS LOBORTIS
 SED ULLAMCORPER</GalleryHeadOne>
-<GalleryParOne>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParOne>
+
+          <GalleryParOne>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParOne>
+
         </GalleryOne>
 
         <GalleryTwo>
+
           <GalleryHeadTwo>TORTOR DOLORE FEUGIAT
 ELEMENTUM MAGNA</GalleryHeadTwo>
-<GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
+
+          <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
+
+          <GalleryOneImg src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Colorful-Fresh-Fruit-Background.jpg"/>
+
         </GalleryTwo>
       
         <GalleryThree>
+
+        <GalleryOneImg src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Colorful-Fresh-Fruit-Background.jpg"/>
+
         `<GalleryHeadThree>AUGUE ELEIFEND ALIQUET
 SED CONDIMENTUM</GalleryHeadThree>
-<GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
+
+          <GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
         </GalleryThree>
 
       </Gallery>
 
       <BottomDiv>
+
         <BottomDivHeading>ACCUMSAN MUS TORTOR NUNC ALIQUET</BottomDivHeading>
 
         <BottomDivPar>ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
@@ -336,12 +359,17 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Bott
       </BottomDiv>
 
       <FooterOptions>
+
         <FooterContent>
+
         <FooterHead>ARCUE UT VEL COMMODO</FooterHead>
+
         <FooterPar>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</FooterPar>
+
         </FooterContent>
 
         <FooterButtons>
+          
       <ActivateButtonFoot>ACTIVATE</ActivateButtonFoot>
 
       <LearnButton>LEARN MORE</LearnButton>
