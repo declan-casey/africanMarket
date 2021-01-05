@@ -19,7 +19,6 @@ const Nav = styled.nav`
 color:white;
 display:flex;
 align-items:right;
-
 `
 
 const A = styled.a`
@@ -31,8 +30,8 @@ text-align:right;
 `
 
 const Menu = styled.div`
-display:flex;
-position:right;
+
+align-items:right;
 
 `
 
@@ -47,7 +46,7 @@ padding:2rem 0rem 2rem 1.5rem;
 const TopOfPage = styled.div`
 background:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Ffruit%2Ffruit-08.jpg&f=1&nofb=1') no-repeat center;
 width:auto;
-padding:0 0 11% 0;
+padding:15%;
 background-size:cover;
 `
 
@@ -57,12 +56,12 @@ color:white;
 text-align:center;
 border-top:solid 3px white;
 border-bottom:solid 3px white;
-width:60%;
+width:50%;
 margin:15rem auto 0rem auto;
 padding: 1rem 3rem;
 background-color:none;
 font-weight:bold;
-font-size:3rem;
+font-size:45px;
 
 `
 
@@ -72,7 +71,7 @@ color:white;
 padding-top:3rem;
 width:65%;
 margin: 0 auto;
-font-size:1.6rem;
+font-size:1rem;
 letter-spacing:2px;
 
 `
@@ -83,10 +82,10 @@ color:white;
 border:none;
 border-radius:4px;
 letter-spacing:2px;
-font-size:22px;
-padding:1.7rem 4rem;
+font-size:12px;
+padding:1% 3.5%;
 display:flex;
-margin: 5rem auto 20rem auto;
+margin: 2rem auto 20rem auto;
 
 `
 
@@ -94,7 +93,7 @@ margin: 5rem auto 20rem auto;
 const CenterDiv = styled.div`
 color:black;
 background-color:#55AFA5;
-padding:12rem;
+padding:1.2%;
 
 `
 
@@ -104,9 +103,10 @@ width:75%;
 margin:auto;
 text-align:center;
 padding-bottom:3rem;
+padding-top:5%;
 border-bottom: solid 1.5px darkgrey;
 font-weight:bold;
-font-size:2.5rem;
+font-size:25px;
 letter-spacing: 2px;
 
 `
@@ -117,7 +117,7 @@ text-align: center;
 color:white;
 width:75%;
 margin:auto;
-font-size:1.6rem;
+font-size:18px;
 letter-spacing:2px;
 `
 
@@ -125,7 +125,8 @@ const IconSpan = styled.span`
 display:flex;
 flex-direction:row;
 justify-content:center;
-padding-top:3rem;
+padding-top:3%;
+padding-bottom:3%;
 `
 
 const MidIcons = styled.button`
@@ -305,6 +306,7 @@ justify-content:center;
 const BottomDivCard = styled.div`
 width:45%;
 height: 75%;
+padding:8% 1%;
 text-align:center;
 background-color:#494a83;
 border: solid .1px #535493;
@@ -403,6 +405,13 @@ padding:1rem;
 margin:5rem;
 `
 
+const Dribble = styled.button`
+border:white;
+padding:1rem;
+margin:5rem;
+`
+
+
 const Email = styled.button`
 border:white;
 padding:1rem;
@@ -416,10 +425,11 @@ function App() {
 
 
     <StyledApp>
-      <div>
 
+      <NavTitle>African Marketplace</NavTitle>
+      <div>
         <Nav>
-          <Menu>
+          <Menu right>
             <Hamburger>
               <A className="menu-item" href="/">Home</A>
               <A className="menu-item" href="/about">About</A>
@@ -427,14 +437,9 @@ function App() {
               <A className="menu-item" href="/signup">Sign Up</A>
               <A className="menu-item" href="/login">Log In </A>
             </Hamburger>
-
           </Menu>
-
         </Nav>
-
       </div>
-      <NavTitle>African Marketplace</NavTitle>
-
 
       <TopOfPage>
         <HeaderOne>African Marketplace</HeaderOne>  
@@ -563,6 +568,7 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Bott
         <Twitter></Twitter>
         <Facebook></Facebook>
         <Instagram></Instagram>
+        <Dribble></Dribble>
         <Email></Email>
       </Social>
       
