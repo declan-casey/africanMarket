@@ -32,19 +32,20 @@ border-top:solid 3px white;
 border-bottom:solid 3px white;
 width:60%;
 margin:15rem auto 0rem auto;
-padding:1rem 0;
+padding: 1rem 3rem;
 background-color:none;
 font-weight:bold;
-font-size:4rem;
+font-size:3rem;
 
 `
 
 const Paragraph = styled.p`
 text-align: center;
 color:white;
+padding-top:3rem;
 width:65%;
 margin: 0 auto;
-font-size:1.2rem;
+font-size:1.6rem;
 letter-spacing:2px;
 
 `
@@ -55,8 +56,8 @@ color:white;
 border:none;
 border-radius:4px;
 letter-spacing:2px;
-font-size:15px;
-padding:1rem 1.5rem;
+font-size:22px;
+padding:1.7rem 4rem;
 display:flex;
 margin: 5rem auto 20rem auto;
 
@@ -72,9 +73,10 @@ padding:5rem;
 
 const HeaderTwo = styled.h2`
 color:white;
-width:65%;
-margin: 0 auto;
+width:75%;
+margin:auto;
 text-align:center;
+padding-bottom:3rem;
 border-bottom: solid 1.5px darkgrey;
 font-weight:bold;
 font-size:2.5rem;
@@ -83,12 +85,32 @@ letter-spacing: 2px;
 `
 
 const ParagraphTwo = styled.p`
+padding-top:3rem;
 text-align: center;
 color:white;
-width:65%;
-margin: 0 auto;
-font-size:1.2rem;
+width:75%;
+margin:auto;
+font-size:1.6rem;
 letter-spacing:2px;
+`
+
+const IconSpan = styled.span`
+display:flex;
+flex-direction:row;
+justify-content:center;
+padding-top:3rem;
+`
+
+const MidIcons = styled.button`
+display:flex;
+width:10%;
+margin:3%;
+padding:1rem;
+flex-direction:row;
+background-color:#55AFA5;
+border:solid slategray 1px;
+justify-content:center;
+
 `
 
 const Gallery = styled.div`
@@ -110,7 +132,7 @@ letter-spacing: 2px;
 `
 
 const GalleryImg = styled.img`
-height:40vh;
+height:60vh;
 width:auto;
 
 `
@@ -132,7 +154,7 @@ width:75%;
 const GalleryParOne = styled.p`
 color:white;
 text-align:left;
-font-size:1.2rem;
+font-size:1.6rem;
 letter-spacing:2px;
 width:75%;
 `
@@ -160,7 +182,7 @@ width:75%;
 const GalleryParTwo = styled.p`
 color:white;
 text-align:left;
-font-size:1.2rem;
+font-size:1.6rem;
 letter-spacing:2px;
 width:75%;
 `
@@ -186,7 +208,7 @@ width:75%;
 const GalleryParThree = styled.p`
 color:white;
 text-align:left;
-font-size:1.2rem;
+font-size:1.6rem;
 letter-spacing:2px;
 width:75%;
 `
@@ -226,15 +248,18 @@ letter-spacing: 2px;
 color:white;
 padding-bottom:2rem;
 border-bottom:solid 1px #2c333a;
+width:75%;
 `
 
 const BottomDivPar = styled.p`
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:1.2rem;
+font-size:1.6rem;
+margin: 2rem auto;
 letter-spacing:2px;
 color:white;
+width:75%;
 
 `
 
@@ -249,7 +274,7 @@ justify-content:center;
 `
 
 const BottomDivCard = styled.div`
-width:45%;
+width:40%;
 height: 30%;
 text-align:center;
 background-color:#494a83;
@@ -262,8 +287,8 @@ display:flex;
 align-items:center;
 justify-content:center;
 padding: 3rem;
-background-color:#16191d;
-
+background:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Ffruit%2Ffruit-08.jpg&f=1&nofb=1') no-repeat center;
+background-size:cover;
 `
 
 
@@ -271,6 +296,7 @@ const FooterContent = styled.div`
 display:flex;
 flex-direction:column;
 width:25%;
+padding:6rem;
 margin-right:25%;
 color:white;
 
@@ -297,7 +323,7 @@ background-color:#DE6852;
 color:white;
 border:none;
 border-radius:4px;
-font-size:15px;
+font-size:22px;
 padding:15% 15%;
 display:flex;
 letter-spacing:2px;
@@ -310,8 +336,8 @@ background-color:black;
 color:white;
 border:none;
 border-radius:4px;
-font-size:15px;
-padding:5% 5%;
+font-size:22px;
+padding:8% 8%;
 display:flex;
 letter-spacing:2px;
 margin: 3rem auto 3rem auto;
@@ -321,8 +347,39 @@ border: 2px solid white;
 
 
 const Social = styled.div`
+background-color:#16191d;
+padding:6rem;
+display:flex;
+justify-content:center;
 
 `
+
+const Twitter = styled.button`
+border:white;
+padding:1rem;
+margin:5rem;
+background-color:white;
+`
+
+const Facebook = styled.button`
+border:white;
+padding:1rem;
+margin:5rem;
+
+`
+
+const Instagram = styled.button`
+border:white;
+padding:1rem;
+margin:5rem;
+`
+
+const Email = styled.button`
+border:white;
+padding:1rem;
+margin:5rem;
+`
+
 
 function App() {
 
@@ -351,6 +408,12 @@ TO GROW OUT OF POVERTY.</Paragraph>
 EGET AUGUE AMET ALIQUET NISL CEP DONEC</HeaderTwo>
         <ParagraphTwo>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
 fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</ParagraphTwo>
+
+        <IconSpan>
+          <MidIcons>One</MidIcons>
+          <MidIcons>Two</MidIcons>
+          <MidIcons>Three</MidIcons>
+        </IconSpan>
 
       </CenterDiv>
 
@@ -451,7 +514,12 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Bott
 
 
 
-      <Social></Social>
+      <Social>
+        <Twitter></Twitter>
+        <Facebook></Facebook>
+        <Instagram></Instagram>
+        <Email></Email>
+      </Social>
       
 
 
