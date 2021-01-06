@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { slide as Hamburger } from "react-burger-menu";
-import BannerImg from '../images/banner.jpg'
 import GalleryOneImg from '../images/pic01.jpg'
 import GalleryTwoImg from '../images/pic02.jpg'
 import GalleryThreeImg from '../images/pic03.jpg'
-
 
 
 
@@ -23,14 +21,18 @@ align-items:right;
 
 const A = styled.a`
 color:white;
-background-color:blue;
+background-color:#21B2A6;
 padding:2rem;
 font-size:1.6rem;
-text-align:right;
+text-align:left;
+text-decoration:none;
+border-bottom: solid 1.5px darkgrey;
 `
 
 const Menu = styled.div`
 align-items:right;
+display:flex;
+margin:0 0 0 100%;
 `
 
 const NavTitle = styled.nav`
@@ -39,6 +41,8 @@ font-weight:bold;
 color:white;
 background-color:#2c333a;
 padding:2rem 0rem 2rem 1.5rem;
+text-align:left;
+
 `
 
 const TopOfPage = styled.div`
@@ -122,15 +126,43 @@ padding-top:3%;
 padding-bottom:3%;
 `
 
-const MidIcons = styled.button`
+const MidIconOne = styled.button`
 display:flex;
-width:10%;
+width:auto;
 margin:3%;
 padding:1rem;
 flex-direction:row;
 background-color:#55AFA5;
-border:solid slategray 1px;
+border:none;
 justify-content:center;
+background:url('https://img.icons8.com/ios/72/diamond--v1.png') no-repeat;
+background-size:2rem;
+`
+
+const MidIconTwo = styled.button`
+display:flex;
+width:auto;
+margin:3%;
+padding:1rem;
+flex-direction:row;
+background-color:#55AFA5;
+border:none;
+justify-content:center;
+background:url('https://img.icons8.com/ios/72/like--v1.png') no-repeat;
+background-size:2rem;
+`
+
+const MidIconThree = styled.button`
+display:flex;
+width:auto;
+margin:3%;
+padding:1rem;
+flex-direction:row;
+background-color:#55AFA5;
+border:none;
+justify-content:center;
+background:url('https://img.icons8.com/ios/72/code.png') no-repeat;
+background-size:2rem;
 `
 
 const Gallery = styled.div`
@@ -141,7 +173,7 @@ flex-direction:column;
 const GalleryOne = styled.div`
 display:flex;
 align-items:center;
-justify-content:center;
+justify-content:space-between;
 flex-direction:row;
 width:100%;
 background-color:#373f49;
@@ -150,14 +182,16 @@ letter-spacing: 2px;
 `
 
 const GalleryImg = styled.img`
+height:30vh;
+width:auto;
+background-position:cover;
+position:cover;
+`
+const GalleryImgThree = styled.img`
 height:50vh;
 width:auto;
 background-position:cover;
-`
-const GalleryImgThree = styled.img`
-height:110vh;
-width:auto;
-position:static;
+position:cover;
 `
 
 const GalleryHeadOne = styled.h2`
@@ -180,7 +214,7 @@ width:75%;
 const GalleryTwo = styled.div`
 display:flex;
 align-items:center;
-justify-content:center;
+justify-content:space-between;
 flex-direction:row;
 width:100%;
 background-color:#2c333a;
@@ -207,7 +241,7 @@ width:75%;
 const GalleryThree = styled.div`
 display:flex;
 align-items:center;
-justify-content:center;
+justify-content:space-evenly;
 flex-direction:row;
 width:100%;
 background-color:#21262c;
@@ -359,35 +393,44 @@ border: 2px solid white;
 
 
 const Social = styled.div`
-background-color:#16191d;
+background-color:#2c333a;
 padding:6rem;
 display:flex;
 justify-content:center;
+
 `
 
 const Twitter = styled.button`
 border:white;
 padding:1rem;
 margin:5rem;
-background-color:white;
+background:url('https://img.icons8.com/ios/72/twitter--v1.png') center;
+background-size:2rem;
 `
 
 const Facebook = styled.button`
 border:white;
 padding:1rem;
 margin:5rem;
+background:url('https://img.icons8.com/ios/72/facebook-new.png') center;
+background-size:2rem;
 `
 
 const Instagram = styled.button`
 border:white;
 padding:1rem;
 margin:5rem;
+background:url('https://img.icons8.com/ios/72/instagram-new--v1.png') center;
+background-size:2rem;
 `
 
-const Dribble = styled.button`
+const Dribbble = styled.button`
 border:white;
 padding:1rem;
 margin:5rem;
+background:url('https://img.icons8.com/ios/72/dribbble-circled--v1.png') center;
+background-size:2rem;
+
 `
 
 
@@ -395,8 +438,9 @@ const Email = styled.button`
 border:white;
 padding:1rem;
 margin:5rem;
+background:url('https://img.icons8.com/ios/72/email.png') center;
+background-size:2rem;
 `
-
 
 function Home() {
 
@@ -405,16 +449,16 @@ function Home() {
 
     <StyledHome>
 
+      <div className='navContainer'>
       <NavTitle>African Marketplace</NavTitle>
-      <div>
         <Nav>
-          <Menu right>
-            <Hamburger>
-              <A className="menu-item" href="/">Home</A>
-              <A className="menu-item" href="/about">About</A>
-              <A className="menu-item" href="/team">Meet The Team</A>
-              <A className="menu-item" href="/signup">Sign Up</A>
-              <A className="menu-item" href="/login">Log In </A>
+          <Menu className='navMenu'>
+            <Hamburger >
+              <A href="/">Home</A>
+              <A href="/about">About</A>
+              <A href="/team">Meet The Team</A>
+              <A href="/signup">Sign Up</A>
+              <A href="/login">Log In </A>
             </Hamburger>
           </Menu>
         </Nav>
@@ -439,11 +483,10 @@ EGET AUGUE AMET ALIQUET NISL CEP DONEC</HeaderTwo>
 fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</ParagraphTwo>
 
         <IconSpan>
-          <MidIcons>One</MidIcons>
-          <MidIcons>Two</MidIcons>
-          <MidIcons>Three</MidIcons>
+          <MidIconOne></MidIconOne>
+          <MidIconTwo></MidIconTwo>
+          <MidIconThree></MidIconThree>
         </IconSpan>
-
       </CenterDiv>
 
 
@@ -544,11 +587,11 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Bott
 
 
       <Social>
-        <Twitter></Twitter>
-        <Facebook></Facebook>
-        <Instagram></Instagram>
-        <Dribble></Dribble>
-        <Email></Email>
+        <Twitter/>
+        <Facebook/>
+        <Instagram/>
+        <Dribbble/>
+        <Email/>
       </Social>
       
 
