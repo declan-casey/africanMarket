@@ -99,39 +99,39 @@ const MidIconOne = styled.button`
 display:flex;
 width:auto;
 margin:3%;
-padding:1rem;
+padding:4rem;
 flex-direction:row;
 background-color:#55AFA5;
 border:none;
 justify-content:center;
 background:url('https://img.icons8.com/ios/72/diamond--v1.png') no-repeat;
-background-size:2rem;
+background-size:5rem;
 `
 
 const MidIconTwo = styled.button`
 display:flex;
 width:auto;
 margin:3%;
-padding:1rem;
+padding:4rem;
 flex-direction:row;
 background-color:#55AFA5;
 border:none;
 justify-content:center;
 background:url('https://img.icons8.com/ios/72/like--v1.png') no-repeat;
-background-size:2rem;
+background-size:5rem;
 `
 
 const MidIconThree = styled.button`
 display:flex;
 width:auto;
 margin:3%;
-padding:1rem;
+padding:4rem;
 flex-direction:row;
 background-color:#55AFA5;
 border:none;
 justify-content:center;
 background:url('https://img.icons8.com/ios/72/code.png') no-repeat;
-background-size:2rem;
+background-size:5rem;
 `
 
 const Gallery = styled.div`

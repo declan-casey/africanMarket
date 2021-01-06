@@ -15,6 +15,7 @@ import About from './About'
 // import styled from 'styled-components';
 const Menu = styled.div`
 align-items:right;
+text-align:left;
 display:flex;
 margin:0 0 0 100%;
 `
