@@ -437,7 +437,6 @@ background:url('https://img.icons8.com/ios/72/email.png') center;
 background-size:2rem;
 `
 
-
 function Home() {
 
   return (
@@ -448,13 +447,13 @@ function Home() {
       <NavTitle>African Marketplace</NavTitle>
       <div>
         <Nav>
-          <Menu right>
-            <Hamburger>
-              <A className="menu-item" href="/">Home</A>
-              <A className="menu-item" href="/about">About</A>
-              <A className="menu-item" href="/team">Meet The Team</A>
-              <A className="menu-item" href="/signup">Sign Up</A>
-              <A className="menu-item" href="/login">Log In </A>
+          <Menu className='navMenu'>
+            <Hamburger >
+              <A href="/">Home</A>
+              <A href="/about">About</A>
+              <A href="/team">Meet The Team</A>
+              <A href="/signup">Sign Up</A>
+              <A href="/login">Log In </A>
             </Hamburger>
           </Menu>
         </Nav>
