@@ -1,181 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  BrowserRouter as Router,
-  Link,
-  Route,
-  Switch,
-} from 'react-router-dom';
-// import { slide as Hamburger } from "react-burger-menu";
-// import  from './images/pic01.jpg'
-// import  from './images/pic02.jpg'
-// import GalleryThreeImg from './images/pic03.jpg'
-
 import { slide as Hamburger } from "react-burger-menu";
 import GalleryOneImg from '../images/pic01.jpg'
 import GalleryTwoImg from '../images/pic02.jpg'
 import GalleryThreeImg from '../images/pic03.jpg'
 
-function Home() {
 
-  return (
-
-
-    <StyledHome>
-
-      <NavTitle>African Marketplace</NavTitle>
-      <div>
-        <Nav>
-          <Menu right>
-            {/* <Hamburger>
-              <A className="menu-item" href="/">Home</A>
-              <A className="menu-item" href="/about">About</A>
-              <A className="menu-item" href="/team">Meet The Team</A>
-              <A className="menu-item" href="/signup">Sign Up</A>
-              <A className="menu-item" href="/login">Log In </A>
-            </Hamburger> */}
-          </Menu>
-        </Nav>
-      </div>
-
-      <TopOfPage>
-        <HeaderOne>African Marketplace</HeaderOne>  
-        <Paragraph>SAUTI AFRICA EMPOWERS SMALL BUSINESS OWNERS, PARTICULARLY WOMEN,
-TO IMPROVE THEIR BUSINESS AND ECONOMIC OPPORTUNITIES
-TO GROW OUT OF POVERTY.</Paragraph>
-        <ActivateButton>ACTIVATE</ActivateButton>
-
-      </TopOfPage>
-
-
-
-      <CenterDiv>
-
-        <HeaderTwo>ARCU ALIQUET VEL LOBORTIS ATA NISL
-EGET AUGUE AMET ALIQUET NISL CEP DONEC</HeaderTwo>
-        <ParagraphTwo>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</ParagraphTwo>
-
-        <IconSpan>
-          <MidIcons>One</MidIcons>
-          <MidIcons>Two</MidIcons>
-          <MidIcons>Three</MidIcons>
-        </IconSpan>
-
-      </CenterDiv>
-
-
-
-      <Gallery>
-
-        <GalleryOne>
-          <GalleryImg />
-          <GalleryTextSpan>
-          <GalleryHeadOne>MAGNA PRIMIS LOBORTIS
-SED ULLAMCORPER</GalleryHeadOne>
-          <GalleryParOne>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParOne>
-          </GalleryTextSpan>
-        </GalleryOne>
-
-
-
-        <GalleryTwo>
-          <GalleryTextSpan>
-            <GalleryHeadTwo>TORTOR DOLORE FEUGIAT
-ELEMENTUM MAGNA</GalleryHeadTwo>
-            <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
-          </GalleryTextSpan>
-            <GalleryImg />
-        </GalleryTwo>
-      
-
-
-        <GalleryThree>
-          <GalleryImgThree />
-          <GalleryTextSpan>
-            <GalleryHeadThree>AUGUE ELEIFEND ALIQUETSED CONDIMENTUM</GalleryHeadThree>
-            <GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
-          </GalleryTextSpan>
-        </GalleryThree>
-
-      </Gallery>
-
-
-
-      <BottomDiv>
-
-        <BottomDivHeading>ACCUMSAN MUS TORTOR NUNC ALIQUET</BottomDivHeading>
-        <BottomDivPar>ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</BottomDivPar>
-        <BottomDivContent>
-
-          <BottomDivCard>
-            <BottomDivHeadings>ARCU ACCUMSAN</BottomDivHeadings>
-            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
-          </BottomDivCard>
-
-          <BottomDivCard>
-            <BottomDivHeadings>AC AUGUE EGET</BottomDivHeadings>
-            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
-          </BottomDivCard>
-
-          <BottomDivCard>
-            <BottomDivHeadings>MUS SCELERISQUE</BottomDivHeadings>
-            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
-          </BottomDivCard>
-
-          <BottomDivCard>
-            <BottomDivHeadings>MAURIS IMPERDIET</BottomDivHeadings>
-            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
-          </BottomDivCard>
-
-          <BottomDivCard>
-            <BottomDivHeadings>AENEAN PRIMIS</BottomDivHeadings>
-            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
-          </BottomDivCard>
-
-          <BottomDivCard>
-            <BottomDivHeadings>TORTOR UT</BottomDivHeadings>
-            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
-          </BottomDivCard>
-
-        </BottomDivContent>
-
-      </BottomDiv>
-
-
-
-      <FooterOptions>
-
-        <FooterContent>
-          <FooterHead>ARCUE UT VEL COMMODO</FooterHead>
-          <FooterPar>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</FooterPar>
-        </FooterContent>
-
-        <FooterButtons>
-          <ActivateButtonFoot>ACTIVATE</ActivateButtonFoot>
-          <LearnButton>LEARN MORE</LearnButton>
-        </FooterButtons>
-
-      </FooterOptions>
-
-
-
-      <Social>
-        <Twitter></Twitter>
-        <Facebook></Facebook>
-        <Instagram></Instagram>
-        <Dribble></Dribble>
-        <Email></Email>
-      </Social>
-      
-
-
-    </StyledHome>
-
-  );
-
-}
 
 /*Styling Using Styled Components*/
 const StyledHome = styled.div`
@@ -612,3 +442,164 @@ background:url('https://img.icons8.com/ios/72/email.png') center;
 background-size:2rem;
 `
 
+function Home() {
+
+  return (
+
+
+    <StyledHome>
+
+      <div className='navContainer'>
+      <NavTitle>African Marketplace</NavTitle>
+        <Nav>
+          <Menu className='navMenu'>
+            <Hamburger >
+              <A href="/">Home</A>
+              <A href="/about">About</A>
+              <A href="/team">Meet The Team</A>
+              <A href="/signup">Sign Up</A>
+              <A href="/login">Log In </A>
+            </Hamburger>
+          </Menu>
+        </Nav>
+      </div>
+
+      <TopOfPage>
+        <HeaderOne>African Marketplace</HeaderOne>  
+        <Paragraph>SAUTI AFRICA EMPOWERS SMALL BUSINESS OWNERS, PARTICULARLY WOMEN,
+TO IMPROVE THEIR BUSINESS AND ECONOMIC OPPORTUNITIES
+TO GROW OUT OF POVERTY.</Paragraph>
+        <ActivateButton>ACTIVATE</ActivateButton>
+
+      </TopOfPage>
+
+
+
+      <CenterDiv>
+
+        <HeaderTwo>ARCU ALIQUET VEL LOBORTIS ATA NISL
+EGET AUGUE AMET ALIQUET NISL CEP DONEC</HeaderTwo>
+        <ParagraphTwo>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</ParagraphTwo>
+
+        <IconSpan>
+          <MidIconOne></MidIconOne>
+          <MidIconTwo></MidIconTwo>
+          <MidIconThree></MidIconThree>
+        </IconSpan>
+      </CenterDiv>
+
+
+
+      <Gallery>
+
+        <GalleryOne>
+          <GalleryImg src={GalleryOneImg}/>
+          <GalleryTextSpan>
+          <GalleryHeadOne>MAGNA PRIMIS LOBORTIS
+SED ULLAMCORPER</GalleryHeadOne>
+          <GalleryParOne>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParOne>
+          </GalleryTextSpan>
+        </GalleryOne>
+
+
+
+        <GalleryTwo>
+          <GalleryTextSpan>
+            <GalleryHeadTwo>TORTOR DOLORE FEUGIAT
+ELEMENTUM MAGNA</GalleryHeadTwo>
+            <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
+          </GalleryTextSpan>
+            <GalleryImg src={GalleryTwoImg} />
+        </GalleryTwo>
+      
+
+
+        <GalleryThree>
+          <GalleryImgThree src={GalleryThreeImg} />
+          <GalleryTextSpan>
+            <GalleryHeadThree>AUGUE ELEIFEND ALIQUETSED CONDIMENTUM</GalleryHeadThree>
+            <GalleryParThree>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParThree>
+          </GalleryTextSpan>
+        </GalleryThree>
+
+      </Gallery>
+
+
+
+      <BottomDiv>
+
+        <BottomDivHeading>ACCUMSAN MUS TORTOR NUNC ALIQUET</BottomDivHeading>
+        <BottomDivPar>ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
+fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</BottomDivPar>
+        <BottomDivContent>
+
+          <BottomDivCard>
+            <BottomDivHeadings>ARCU ACCUMSAN</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>AC AUGUE EGET</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>MUS SCELERISQUE</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>MAURIS IMPERDIET</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>AENEAN PRIMIS</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+          <BottomDivCard>
+            <BottomDivHeadings>TORTOR UT</BottomDivHeadings>
+            <BottomDivPar>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</BottomDivPar>
+          </BottomDivCard>
+
+        </BottomDivContent>
+
+      </BottomDiv>
+
+
+
+      <FooterOptions>
+
+        <FooterContent>
+          <FooterHead>ARCUE UT VEL COMMODO</FooterHead>
+          <FooterPar>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</FooterPar>
+        </FooterContent>
+
+        <FooterButtons>
+          <ActivateButtonFoot>ACTIVATE</ActivateButtonFoot>
+          <LearnButton>LEARN MORE</LearnButton>
+        </FooterButtons>
+
+      </FooterOptions>
+
+
+
+      <Social>
+        <Twitter/>
+        <Facebook/>
+        <Instagram/>
+        <Dribbble/>
+        <Email/>
+      </Social>
+      
+
+
+    </StyledHome>
+
+  );
+
+}
+
+export default Home;
