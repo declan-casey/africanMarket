@@ -9,9 +9,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Home />
         <Header />
-        <OwnerRegister />
       </div>
     </Router>
   );
