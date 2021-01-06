@@ -449,7 +449,7 @@ function Home() {
 
     <StyledHome>
 
-      <NavTitle>African Marketplace</NavTitle>
+<NavTitle>African Marketplace</NavTitle>
       <div>
         <Nav>
           <Menu className='navMenu'>
@@ -587,11 +587,11 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Bott
 
 
       <Social>
-        <Twitter></Twitter>
-        <Facebook></Facebook>
-        <Instagram></Instagram>
-        <Dribbble></Dribbble>
-        <Email></Email>
+        <Twitter/>
+        <Facebook/>
+        <Instagram/>
+        <Dribbble/>
+        <Email/>
       </Social>
       
 
