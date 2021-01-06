@@ -10,9 +10,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Home />
-        {/* <Header />
-        <OwnerRegister /> */}
+        <Header />
+
       </div>
     </Router>
   );
