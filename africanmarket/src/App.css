@@ -43,13 +43,19 @@ display:flex;
 margin:0 0 0 100%;
 }
 
+.navContainer{
+position: static;
+
+
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
   width: .5%;
   height: .5%;
   left: 95%;
-  top:1%;
+  top:1.5%;
   padding:1rem;
 }
 
@@ -64,4 +70,3 @@ margin:0 0 0 100%;
   width: 5px;
 }
 
-/* Color/shape of close button cross */

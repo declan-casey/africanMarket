@@ -7,7 +7,6 @@ import GalleryThreeImg from '../images/pic03.jpg'
 
 
 
-
 /*Styling Using Styled Components*/
 const StyledHome = styled.div`
 display: flex;
@@ -43,6 +42,7 @@ color:white;
 background-color:#2c333a;
 padding:2rem 0rem 2rem 1.5rem;
 text-align:left;
+
 `
 
 const TopOfPage = styled.div`
@@ -449,8 +449,8 @@ function Home() {
 
     <StyledHome>
 
-<NavTitle>African Marketplace</NavTitle>
-      <div>
+      <div className='navContainer'>
+      <NavTitle>African Marketplace</NavTitle>
         <Nav>
           <Menu className='navMenu'>
             <Hamburger >
