@@ -39,13 +39,12 @@
 
 
 .navMenu{
-display:flex;
-margin:0 0 0 100%;
+  padding-top:1rem;
+  background-color: #282c34;
 }
 
 .navContainer{
 position: static;
-
 
 }
 
@@ -64,9 +63,14 @@ position: static;
   background:  #61dafb;
 }
 
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-  height: 5px;
-  width: 5px;
+.hamburger{
+ background-color: #61dafb;
+
 }
 
+.buttons{
+  margin:3rem;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight:bold;
+}

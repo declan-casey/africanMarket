@@ -43,21 +43,8 @@ function About (){
     return(
 
         <div>
-            <NavTitle>African Marketplace</NavTitle>
-                <div>
-                    <Nav>
-                    <Menu className='navMenu'>
-                        <Hamburger >
-                        <A href="/">Home</A>
-                        <A href="/about">About</A>
-                        <A href="/team">Meet The Team</A>
-                        <A href="/signup">Sign Up</A>
-                        <A href="/login">Log In </A>
-                        </Hamburger>
-                    </Menu>
-                    </Nav>
-                </div>
-    </div>
+           
+        </div>
 
 
     )

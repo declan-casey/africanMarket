@@ -1,4 +1,7 @@
 import React from 'react';
+import { slide as Hamburger } from "react-burger-menu";
+import styled from 'styled-components';
+
 import {
     BrowserRouter as Router,
     Link,
@@ -8,19 +11,37 @@ import {
 import Register from './OwnerRegister';
 import Home from './Home';
 import Login from './Login';
+import About from './About'
 // import styled from 'styled-components';
+const Menu = styled.div`
+align-items:right;
+display:flex;
+margin:0 0 0 100%;
+`
 
+const MainHeader = styled.div`
+text-align:left;
+padding:2rem;
+font-size:36px;
+font-weight:bold;
+`
 const Header = () => {
     return (
-        <nav>
-            <h1>AFRICAN MARKET</h1>
-            <Link to='/register'>Register</Link>
-            <Link to='/'>Home</Link>
-            <Link to='/login'>Login</Link>
+        <nav className='navMenu'>
+            <MainHeader>AFRICAN MARKET</MainHeader>
+            <Menu className='menu'>
+                <Hamburger className='hamburger' >
+                    <Link className='buttons' to='/'>Home</Link>
+                    <Link className='buttons' to='/about'>About</Link>
+                    <Link className='buttons' to='/register'>Register</Link>
+                    <Link className='buttons' to='/login'>Login</Link>
+                </Hamburger>
+            </Menu>
 
             <Switch>
-                <Route path="/register" component={Register} />
                 <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/register" component={Register} />
                 <Route path='/login' component={Login} />
             </Switch>
         </nav>
