@@ -22,10 +22,12 @@ align-items:right;
 
 const A = styled.a`
 color:white;
-background-color:blue;
+background-color:#21B2A6;
 padding:2rem;
 font-size:1.6rem;
-text-align:right;
+text-align:left;
+text-decoration:none;
+border-bottom: solid 1.5px darkgrey;
 `
 
 const Menu = styled.div`
