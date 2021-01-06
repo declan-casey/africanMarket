@@ -32,6 +32,8 @@ border-bottom: solid 1.5px darkgrey;
 
 const Menu = styled.div`
 align-items:right;
+display:flex;
+margin:0 0 0 100%;
 `
 
 const NavTitle = styled.nav`
@@ -40,6 +42,7 @@ font-weight:bold;
 color:white;
 background-color:#2c333a;
 padding:2rem 0rem 2rem 1.5rem;
+text-align:left;
 `
 
 const TopOfPage = styled.div`

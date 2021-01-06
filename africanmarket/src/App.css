@@ -42,3 +42,26 @@
 display:flex;
 margin:0 0 0 100%;
 }
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: .5%;
+  height: .5%;
+  left: 97%;
+  top:0;
+  padding:1rem;
+}
+
+
+.bm-burger-bars {
+  background:  #61dafb;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 5px;
+  width: 5px;
+}
+
+/* Color/shape of close button cross */
