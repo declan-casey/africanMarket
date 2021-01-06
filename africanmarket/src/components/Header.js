@@ -8,6 +8,7 @@ import {
 import Register from './OwnerRegister';
 import Home from './Home';
 import Login from './Login';
+import Dashboard from './Dashboard';
 // import styled from 'styled-components';
 
 const Header = () => {
@@ -22,6 +23,7 @@ const Header = () => {
                 <Route path="/register" component={Register} />
                 <Route exact path="/" component={Home} />
                 <Route path='/login' component={Login} />
+                <Route path='/dashboard' component={Dashboard} />
             </Switch>
         </nav>
     )
