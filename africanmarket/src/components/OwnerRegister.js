@@ -214,7 +214,7 @@ const OwnerRegister = () => {
 
                         <H2>Category:</H2>
                             <Input
-                            placeholder="Store Name"
+                            placeholder="Category"
                             type="text"
                             name="store_category"
                             value={formValues.store_category}

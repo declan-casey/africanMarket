@@ -193,7 +193,7 @@ export default Home;
     `
     
 const ActivateButton = styled.button`
-   padding:2% 2%;
+    padding:1.5% 2%;
     letter-spacing:2px;
     display:flex;
     margin: 3% auto 3% auto;
