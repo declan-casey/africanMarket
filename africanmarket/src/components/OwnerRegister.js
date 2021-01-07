@@ -135,27 +135,29 @@ const OwnerRegister = () => {
         });
     }
   };
+
+
+
   return (
       
         <div>
+
             <div>
                 <div className="usernameError">{formErrors.roleId}</div>
                 <div className="store_nameError">{formErrors.store_name}</div>
                 <div className="nameError">{formErrors.username}</div>
                 <div className="passwordError">{formErrors.password}</div>
             </div>
+
             <Form onSubmit={submit}>
 
               <HeadingContainer>
                 <Heading>SIGN UP</Heading>
               </HeadingContainer>
              
-      
-                <InputSection>
-
+                <TopInputSection>
 
                       <H2>Vendor or Customer?</H2>
-
 
                   <Select
                       id="roleId"
@@ -163,14 +165,13 @@ const OwnerRegister = () => {
                       value={formValues.roleId}
                       onChange={handleChange}
                       >
+
                       <option value="">---Choose One---</option>
                       <option value="2">Owner</option>
                       <option value="1">Customer</option>
                   </Select>
 
-
                       <H2>Username:</H2>  
-
 
                       <Input
                       placeholder="Username"
@@ -179,7 +180,6 @@ const OwnerRegister = () => {
                       value={formValues.username}
                       onChange={handleChange}
                       />
-              
                     
                       <H2>Password:</H2>
                     
@@ -191,52 +191,59 @@ const OwnerRegister = () => {
                       onChange={handleChange}
                       />
 
-
                   {/* {formValues.roleId ? 2 : <OwnerOnly id='hidden' />} */}
-
 
                   <Button disabled={disabled}>Submit</Button>
 
-                </InputSection>
+                </TopInputSection>
 
-
-
+              <BottomInputSection>
 
                 <OwnerOnly>
-                        <div className="label">
-                            <h2>Store Name:</h2>
-                            <input
+                            <H2>Store Name:</H2>
+                            <Input
                             placeholder="Store Name"
                             type="text"
                             name="store_name"
                             value={formValues.store_name}
                             onChange={handleChange}
                             />
-                        </div>
                 </OwnerOnly>
+
                 <OwnerOnly>
-                    <div className='label'>
-                        <h2>Category:</h2>
-                        <div className="label">
-                            <input
+
+                        <H2>Category:</H2>
+                            <Input
                             placeholder="Store Name"
                             type="text"
                             name="store_category"
                             value={formValues.store_category}
                             onChange={handleChange}
                             />
-                        </div>
-                    </div>
+
                 </OwnerOnly>
                 
+              </BottomInputSection>
+
+              <Social>
+                <Twitter/>
+                <Facebook/>
+                <Instagram/>
+                <Dribbble/>
+                <Email/>
+              </Social>
+
             </Form>
+
         </div>
+
   );
+
 };
 let OwnerOnly = styled.label`
     width: 100px;
     #hidden {
-        display: none;
+      display: none;
     }
 `
 export default OwnerRegister;
@@ -289,7 +296,7 @@ border-radius:4px;
 `
 
 
-const InputSection = styled.div`
+const TopInputSection = styled.div`
 background-color:#494a83;
 padding-bottom:6%;
 display:flex;
@@ -300,4 +307,60 @@ const HeadingContainer = styled.div`
     width:auto;
     padding:15%;
     background-size:cover;
+`
+
+const BottomInputSection= styled.div`
+padding:2rem;
+margin:2rem;
+margin-bottom:10%
+`
+
+const Social = styled.div`
+    background-color:#2c333a;
+    padding:6rem;
+    display:flex;
+    justify-content:center;
+    
+`
+    
+const Twitter = styled.button`
+    border:white;
+    padding:1rem;
+    margin:5rem;
+    background:url('https://img.icons8.com/ios/72/twitter--v1.png') center;
+    background-size:2rem;
+`
+    
+const Facebook = styled.button`
+    border:white;
+    padding:1rem;
+    margin:5rem;
+    background:url('https://img.icons8.com/ios/72/facebook-new.png') center;
+    background-size:2rem;
+`
+    
+const Instagram = styled.button`
+    border:white;
+    padding:1rem;
+    margin:5rem;
+    background:url('https://img.icons8.com/ios/72/instagram-new--v1.png') center;
+    background-size:2rem;
+`
+    
+const Dribbble = styled.button`
+    border:white;
+    padding:1rem;
+    margin:5rem;
+    background:url('https://img.icons8.com/ios/72/dribbble-circled--v1.png') center;
+    background-size:2rem;
+    
+`
+    
+    
+const Email = styled.button`
+    border:white;
+    padding:1rem;
+    margin:5rem;
+    background:url('https://img.icons8.com/ios/72/email.png') center;
+    background-size:2rem;
 `
