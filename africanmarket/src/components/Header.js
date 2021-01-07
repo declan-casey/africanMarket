@@ -1,7 +1,6 @@
 import React from 'react';
 import { slide as Hamburger } from "react-burger-menu";
 import styled from 'styled-components';
-
 import {
     BrowserRouter as Router,
     Link,
@@ -14,7 +13,6 @@ import About from './About'
 import Register from './OwnerRegister';
 import Login from './Login';
 import Dashboard from './Dashboard';
-// import styled from 'styled-components';
 
 
   const Header = () => {
@@ -57,6 +55,7 @@ export default Header;
     const MainHeader = styled.div`
     text-align:left;
     padding:2rem;
+    background-color:#282c34;
     font-size:36px;
     font-weight:bold;
     `
