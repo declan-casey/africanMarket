@@ -17,7 +17,8 @@ import Dashboard from './Dashboard';
 
   const Header = () => {
     return (
-        <nav className='navMenu'>
+        <div>
+            <nav className='navMenu'>
             <MainHeader>AFRICAN MARKET</MainHeader>
             <Menu  className='menu'>
                 <Hamburger className='hamburger' >
@@ -28,16 +29,17 @@ import Dashboard from './Dashboard';
                     <Link className='buttons' to='/login'>LOGIN</Link>
                 </Hamburger>
             </Menu>
-
-            <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/team" component={Team} />
-                <Route path="/register" component={Register} />
-                <Route path='/login' component={Login} />
-                <Route path='/dashboard' component={Dashboard} />
-            </Switch>
         </nav>
+        <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/team" component={Team} />
+            <Route path="/register" component={Register} />
+            <Route path='/login' component={Login} />
+            <Route path='/dashboard' component={Dashboard} />
+        </Switch>
+        </div>
+        
     )
 }
 
