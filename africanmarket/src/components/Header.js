@@ -1,26 +1,18 @@
 import React from 'react';
 import { slide as Hamburger } from "react-burger-menu";
 import styled from 'styled-components';
-
 import {
     BrowserRouter as Router,
     Link,
     Route,
     Switch,
   } from 'react-router-dom';
-
-  import Home from './Home';
-  import Team from './Team'
-  import About from './About'
-  import Register from './OwnerRegister';
-  import Login from './Login';
-
-
-import Register from './OwnerRegister';
 import Home from './Home';
+import Team from './Team'
+import About from './About'
+import Register from './OwnerRegister';
 import Login from './Login';
 import Dashboard from './Dashboard';
-// import styled from 'styled-components';
 
 
   const Header = () => {
