@@ -7,6 +7,7 @@ import { useHistory } from "react-router-dom";
 const initialFormValues = {
   username: "",
   password: "",
+  roleId: 0
 };
 
 const Login = (props) => {
@@ -24,31 +25,40 @@ const Login = (props) => {
 
   const submit = (e) => {
     e.preventDefault();
-    axios
-      .post(
-        "https://bw-african-marketplace-app.herokuapp.com/api/login",
-        formValues
-      )
-      .then((res) => {
-        console.log(res);
-        if (res.data.type === "diner") {
-          localStorage.setItem("user", res.data.diner.dinerId);
-        }
-        if (res.data.type === "operator") {
-          localStorage.setItem("user", res.data.operator.operatorId);
-        }
-        localStorage.setItem("roleId", res.data.type);
-        localStorage.setItem("token", res.data.token);
-        history.push("/dashboard");
-        // need some if + then logic to decide which endpoint to sent post request to
+    console.log('wrtwty', formValues);
 
-        // window.localStorage.setItem("token", res.data.payload);
-        // props.history.push("/bubblepage");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    const login = {
+        username: formValues.username,
+        password: formValues.password
+    }
+    if(formValues.roleId === '2'){
+        axios
+        .post('https://bw-african-marketplace-app.herokuapp.com/api/login/owner', login)
+        .then(res => {
+            localStorage.setItem('token', res.data.token);
+            localStorage.setItem('owner id', res.data.id)
+            history.push('/dashboard')
+            console.log(res);    
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }
+    else if(formValues.roleId === '1') {
+        axios
+        .post('https://bw-african-marketplace-app.herokuapp.com/api/login/user', login)
+        .then(res => {
+            localStorage.setItem('token', res.data.token);
+            history.push('/dashboard')
+            console.log(res);
+        })
+        .catch(err => {
+            console.log(err);
+        })
+    }
   };
+
+
   return (
     <div className="body">
       <div className="form">
@@ -67,10 +77,25 @@ const Login = (props) => {
             value={formValues.passowrd}
             onChange={handleChange}
           />
-          <button>Submit</button>
+          <label>
+                <div className="label">
+                    <h2>Vendor or Customer?</h2>
+                </div>
+                <select
+                    id="roleId"
+                    name="roleId"
+                    value={formValues.roleId}
+                    onChange={handleChange}
+                >
+                    <option value="">---Choose One---</option>
+                    <option value="2">Owner</option>
+                    <option value="1">Customer</option>
+                </select>
+                </label>
+                <button type='submit'>Submit</button>
         </form>
       </div>
     </div>
   );
 };
-export default Login
+export default Login;
