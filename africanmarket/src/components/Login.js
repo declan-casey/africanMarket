@@ -75,7 +75,7 @@ const Login = (props) => {
             value={formValues.username}
             onChange={handleChange}
           />
-          
+
           <Input
             placeholder="password"
             type="text"
@@ -126,6 +126,7 @@ border-bottom:2px solid white;
 width:75%;
 padding:2%;
 color:white;
+font-size:45px;
 margin: 5rem auto;
 `
 

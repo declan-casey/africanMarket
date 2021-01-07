@@ -263,6 +263,7 @@ border-bottom:2px solid white;
 width:75%;
 padding:2%;
 color:white;
+font-size:45px;
 margin: 5rem auto;
 `
 
@@ -297,7 +298,7 @@ border-radius:4px;
 
 
 const TopInputSection = styled.div`
-background-color:#494a83;
+background-color:#55AFA5;
 padding-bottom:6%;
 display:flex;
 flex-direction:column;
@@ -310,9 +311,9 @@ const HeadingContainer = styled.div`
 `
 
 const BottomInputSection= styled.div`
-padding:2rem;
-margin:2rem;
-margin-bottom:10%
+background-color: #51528F;
+padding-bottom:10%;
+
 `
 
 const Social = styled.div`
