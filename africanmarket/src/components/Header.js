@@ -8,11 +8,19 @@ import {
     Route,
     Switch,
   } from 'react-router-dom';
+
   import Home from './Home';
   import Team from './Team'
   import About from './About'
   import Register from './OwnerRegister';
   import Login from './Login';
+
+
+import Register from './OwnerRegister';
+import Home from './Home';
+import Login from './Login';
+import Dashboard from './Dashboard';
+// import styled from 'styled-components';
 
 
   const Header = () => {
@@ -35,6 +43,7 @@ import {
                 <Route path="/team" component={Team} />
                 <Route path="/register" component={Register} />
                 <Route path='/login' component={Login} />
+                <Route path='/dashboard' component={Dashboard} />
             </Switch>
         </nav>
     )
