@@ -12,7 +12,7 @@ function Team (){
         <StyledAbout>
 
             <TopOfPage>
-                <HeaderOne>MEET THE TEAM</HeaderOne>  
+                <HeaderOne>MEET THE TEAM ESPECIALLY REMY</HeaderOne>  
                 <Paragraph>ALIQUAM UT EX UT INTERDUM DONEC AMET IMPERDIET ELEIFEND</Paragraph>
             </TopOfPage>
 
