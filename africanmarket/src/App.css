@@ -74,3 +74,8 @@ position: static;
   font-size: 25px;
   font-weight:bold;
 }
+
+
+.midBorder{
+  border-bottom:3px solid black;  
+}

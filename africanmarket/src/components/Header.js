@@ -8,40 +8,31 @@ import {
     Route,
     Switch,
   } from 'react-router-dom';
-import Register from './OwnerRegister';
-import Home from './Home';
-import Login from './Login';
-import About from './About'
-// import styled from 'styled-components';
-const Menu = styled.div`
-align-items:right;
-text-align:left;
-display:flex;
-margin:0 0 0 100%;
-`
+  import Home from './Home';
+  import Team from './Team'
+  import About from './About'
+  import Register from './OwnerRegister';
+  import Login from './Login';
 
-const MainHeader = styled.div`
-text-align:left;
-padding:2rem;
-font-size:36px;
-font-weight:bold;
-`
-const Header = () => {
+
+  const Header = () => {
     return (
         <nav className='navMenu'>
             <MainHeader>AFRICAN MARKET</MainHeader>
             <Menu className='menu'>
                 <Hamburger className='hamburger' >
-                    <Link className='buttons' to='/'>Home</Link>
-                    <Link className='buttons' to='/about'>About</Link>
-                    <Link className='buttons' to='/register'>Register</Link>
-                    <Link className='buttons' to='/login'>Login</Link>
+                    <Link className='buttons' to='/'>HOME</Link>
+                    <Link className='buttons' to='/team'>MEET THE TEAM</Link>
+                    <Link className='buttons' to='/about'>ABOUT</Link>
+                    <Link className='buttons' to='/register'>REGISTER</Link>
+                    <Link className='buttons' to='/login'>LOGIN</Link>
                 </Hamburger>
             </Menu>
 
             <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/about" component={About} />
+                <Route path="/team" component={Team} />
                 <Route path="/register" component={Register} />
                 <Route path='/login' component={Login} />
             </Switch>
@@ -50,3 +41,17 @@ const Header = () => {
 }
 
 export default Header;
+    // import styled from 'styled-components';
+    const Menu = styled.div`
+    align-items:right;
+    text-align:left;
+    display:flex;
+    margin:0 0 0 100%;
+    `
+    
+    const MainHeader = styled.div`
+    text-align:left;
+    padding:2rem;
+    font-size:36px;
+    font-weight:bold;
+    `
