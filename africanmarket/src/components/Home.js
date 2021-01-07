@@ -192,17 +192,15 @@ export default Home;
     letter-spacing:2px;
     `
     
-    const ActivateButton = styled.button`
+const ActivateButton = styled.button`
+   padding:2% 2%;
+    letter-spacing:2px;
+    display:flex;
+    margin: 3% auto 3% auto;
     background-color:#DE6852;
     color:white;
     border:none;
     border-radius:4px;
-    letter-spacing:2px;
-    font-size:18px;
-    font-weight:bold;
-    padding:1% 3.5%;
-    display:flex;
-    margin: 2rem auto 20rem auto;
     `
     
     
@@ -484,28 +482,25 @@ export default Home;
     `
     
     const ActivateButtonFoot = styled.button`
+    padding:15% 15%;
+    letter-spacing:2px;
+    display:flex;
+    margin: 3% auto 3% auto;
     background-color:#DE6852;
     color:white;
     border:none;
     border-radius:4px;
-    font-size:22px;
-    padding:15% 15%;
-    display:flex;
-    letter-spacing:2px;
-    margin: 3rem auto 0rem auto;
     `
     
     const LearnButton = styled.button`
+    padding:8% 8%;
+    letter-spacing:2px;
+    display:flex;
+    margin: 3% auto 3% auto;
     background-color:black;
     color:white;
     border:none;
     border-radius:4px;
-    font-size:22px;
-    padding:8% 8%;
-    display:flex;
-    letter-spacing:2px;
-    margin: 3rem auto 3rem auto;
-    border: 2px solid white;
     `
     
     

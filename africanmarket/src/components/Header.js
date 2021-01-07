@@ -20,7 +20,7 @@ import Dashboard from './Dashboard';
         <div>
             <nav className='navMenu'>
             <MainHeader>AFRICAN MARKET</MainHeader>
-            <Menu className='menu'>
+            <Menu  className='menu'>
                 <Hamburger className='hamburger' >
                     <Link className='buttons' to='/'>HOME</Link>
                     <Link className='buttons' to='/team'>MEET THE TEAM</Link>
@@ -46,10 +46,9 @@ import Dashboard from './Dashboard';
 export default Header;
     // import styled from 'styled-components';
     const Menu = styled.div`
-    align-items:right;
     text-align:left;
-    display:flex;
-    margin:0 0 0 100%;
+    background:none;
+    
     `
     
     const MainHeader = styled.div`
