@@ -2,37 +2,32 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: .5%;
+  left: 95%;
+  top:2%;
+  padding:1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.bm-burger-bars {
+  background: #55AFA5;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hamburger{
+  background-color: #55AFA5;
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons{
+  padding:2rem;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight:300;
+  color:white;
 }
