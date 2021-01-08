@@ -17,6 +17,7 @@ function Home() {
     <StyledHome>
 
       <TopOfPage>
+        
         <HeaderOne>AFRICAN MARKETPLACE</HeaderOne>  
         <Paragraph>SAUTI AFRICA EMPOWERS SMALL BUSINESS OWNERS, PARTICULARLY WOMEN,TO IMPROVE THEIR BUSINESS AND ECONOMIC OPPORTUNITIES TO GROW OUT OF POVERTY.</Paragraph>
         <ActivateButton>ACTIVATE</ActivateButton>
@@ -35,6 +36,7 @@ function Home() {
           <MidIconTwo></MidIconTwo>
           <MidIconThree></MidIconThree>
         </IconSpan>
+
       </CenterDiv>
 
 
@@ -186,7 +188,7 @@ export default Home;
     margin: 0 auto;
     font-size:1rem;
     letter-spacing:2px;
-    `
+`
     
 const ActivateButton = styled.button`
     padding:1.5% 2%;

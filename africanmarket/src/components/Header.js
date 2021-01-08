@@ -16,9 +16,11 @@ import Dashboard from './Dashboard';
 
 
   const Header = () => {
+      
     return (
+
         <div>
-            <nav className='navMenu'>
+
             <MainHeader>AFRICAN MARKET</MainHeader>
             <Menu  className='menu'>
                 <Hamburger className='hamburger' >
@@ -29,15 +31,16 @@ import Dashboard from './Dashboard';
                     <Link className='buttons' to='/login'>LOGIN</Link>
                 </Hamburger>
             </Menu>
-        </nav>
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/team" component={Team} />
-            <Route path="/register" component={Register} />
-            <Route path='/login' component={Login} />
-            <Route path='/dashboard' component={Dashboard} />
-        </Switch>
+
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/team" component={Team} />
+                <Route path="/register" component={Register} />
+                <Route path='/login' component={Login} />
+                <Route path='/dashboard' component={Dashboard} />
+            </Switch>
+
         </div>
         
     )
@@ -49,7 +52,7 @@ export default Header;
     text-align:left;
     background:none;
     
-    `
+`
     
     const MainHeader = styled.div`
     text-align:left;
@@ -57,4 +60,4 @@ export default Header;
     background-color:#282c34;
     font-size:36px;
     font-weight:bold;
-    `
+`

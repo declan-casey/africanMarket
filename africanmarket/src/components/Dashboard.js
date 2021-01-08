@@ -65,7 +65,7 @@ const Social = styled.div`
     display:flex;
     justify-content:center;
     
-    `
+`
     
     const Twitter = styled.button`
     border:white;
@@ -73,7 +73,7 @@ const Social = styled.div`
     margin:5rem;
     background:url('https://img.icons8.com/ios/72/twitter--v1.png') center;
     background-size:2rem;
-    `
+`
     
     const Facebook = styled.button`
     border:white;
@@ -81,7 +81,7 @@ const Social = styled.div`
     margin:5rem;
     background:url('https://img.icons8.com/ios/72/facebook-new.png') center;
     background-size:2rem;
-    `
+`
     
     const Instagram = styled.button`
     border:white;
@@ -89,7 +89,7 @@ const Social = styled.div`
     margin:5rem;
     background:url('https://img.icons8.com/ios/72/instagram-new--v1.png') center;
     background-size:2rem;
-    `
+`
     
     const Dribbble = styled.button`
     border:white;
@@ -98,7 +98,7 @@ const Social = styled.div`
     background:url('https://img.icons8.com/ios/72/dribbble-circled--v1.png') center;
     background-size:2rem;
     
-    `
+`
     
     
     const Email = styled.button`
@@ -107,4 +107,4 @@ const Social = styled.div`
     margin:5rem;
     background:url('https://img.icons8.com/ios/72/email.png') center;
     background-size:2rem;
-    `
+`
