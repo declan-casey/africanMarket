@@ -18,9 +18,7 @@ function Home() {
 
       <TopOfPage>
         <HeaderOne>AFRICAN MARKETPLACE</HeaderOne>  
-        <Paragraph>SAUTI AFRICA EMPOWERS SMALL BUSINESS OWNERS, PARTICULARLY WOMEN,
-TO IMPROVE THEIR BUSINESS AND ECONOMIC OPPORTUNITIES
-TO GROW OUT OF POVERTY.</Paragraph>
+        <Paragraph>SAUTI AFRICA EMPOWERS SMALL BUSINESS OWNERS, PARTICULARLY WOMEN,TO IMPROVE THEIR BUSINESS AND ECONOMIC OPPORTUNITIES TO GROW OUT OF POVERTY.</Paragraph>
         <ActivateButton>ACTIVATE</ActivateButton>
 
       </TopOfPage>
@@ -29,10 +27,8 @@ TO GROW OUT OF POVERTY.</Paragraph>
 
       <CenterDiv>
 
-        <HeaderTwo>ARCU ALIQUET VEL LOBORTIS ATA NISL
-EGET AUGUE AMET ALIQUET NISL CEP DONEC</HeaderTwo>
-        <ParagraphTwo>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</ParagraphTwo>
+        <HeaderTwo>ARCU ALIQUET VEL LOBORTIS ATA NISLEGET AUGUE AMET ALIQUET NISL CEP DONEC</HeaderTwo>
+        <ParagraphTwo>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifendfringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</ParagraphTwo>
 
         <IconSpan>
           <MidIconOne></MidIconOne>
@@ -48,8 +44,7 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Para
         <GalleryOne>
           <GalleryImg src={GalleryOneImg}/>
           <GalleryTextSpan>
-          <GalleryHeadOne>MAGNA PRIMIS LOBORTIS
-SED ULLAMCORPER</GalleryHeadOne>
+          <GalleryHeadOne>MAGNA PRIMIS LOBORTISSED ULLAMCORPER</GalleryHeadOne>
           <GalleryParOne>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParOne>
           </GalleryTextSpan>
         </GalleryOne>
@@ -58,8 +53,7 @@ SED ULLAMCORPER</GalleryHeadOne>
 
         <GalleryTwo>
           <GalleryTextSpan>
-            <GalleryHeadTwo>TORTOR DOLORE FEUGIAT
-ELEMENTUM MAGNA</GalleryHeadTwo>
+            <GalleryHeadTwo>TORTOR DOLORE FEUGIATELEMENTUM MAGNA</GalleryHeadTwo>
             <GalleryParTwo>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</GalleryParTwo>
           </GalleryTextSpan>
             <GalleryImg src={GalleryTwoImg} />
@@ -82,8 +76,7 @@ ELEMENTUM MAGNA</GalleryHeadTwo>
       <BottomDiv>
 
         <BottomDivHeading>ACCUMSAN MUS TORTOR NUNC ALIQUET</BottomDivHeading>
-        <BottomDivPar>ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
-fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</BottomDivPar>
+        <BottomDivPar>ut ex ut augue consectetur interdum. Donec amet imperdiet eleifendfringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</BottomDivPar>
         <BottomDivContent>
 
           <BottomDivCard>
@@ -155,18 +148,21 @@ fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</Bott
 }
 
 export default Home;
-    /*Styling Using Styled Components*/
+
+    /*Styling Using styled. Components*/
+
+
     const StyledHome = styled.div`
     display: flex;
     flex-direction:column;
-    `
+`
     
     const TopOfPage = styled.div`
     background:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Ffruit%2Ffruit-08.jpg&f=1&nofb=1') no-repeat center;
     width:auto;
     padding:15%;
     background-size:cover;
-    `
+`
     
     
     const HeaderOne = styled.h1`
@@ -180,7 +176,7 @@ export default Home;
     background-color:none;
     font-weight:bold;
     font-size:45px;
-    `
+`
     
     const Paragraph = styled.p`
     text-align: center;
@@ -201,14 +197,14 @@ const ActivateButton = styled.button`
     color:white;
     border:none;
     border-radius:4px;
-    `
+`
     
     
     const CenterDiv = styled.div`
     color:black;
     background-color:#55AFA5;
     padding:1.2%;
-    `
+`
     
     const HeaderTwo = styled.h2`
     color:white;
@@ -221,7 +217,7 @@ const ActivateButton = styled.button`
     font-weight:bold;
     font-size:25px;
     letter-spacing: 2px;
-    `
+`
     
     const ParagraphTwo = styled.p`
     padding-top:3rem;
@@ -231,7 +227,7 @@ const ActivateButton = styled.button`
     margin:auto;
     font-size:18px;
     letter-spacing:2px;
-    `
+`
     
     const IconSpan = styled.span`
     display:flex;
@@ -239,7 +235,7 @@ const ActivateButton = styled.button`
     justify-content:center;
     padding-top:3%;
     padding-bottom:3%;
-    `
+`
     
     const MidIconOne = styled.button`
     display:flex;
@@ -252,7 +248,7 @@ const ActivateButton = styled.button`
     justify-content:center;
     background:url('https://img.icons8.com/ios/72/diamond--v1.png') no-repeat;
     background-size:5rem;
-    `
+`
     
     const MidIconTwo = styled.button`
     display:flex;
@@ -265,7 +261,7 @@ const ActivateButton = styled.button`
     justify-content:center;
     background:url('https://img.icons8.com/ios/72/like--v1.png') no-repeat;
     background-size:5rem;
-    `
+`
     
     const MidIconThree = styled.button`
     display:flex;
@@ -278,12 +274,12 @@ const ActivateButton = styled.button`
     justify-content:center;
     background:url('https://img.icons8.com/ios/72/code.png') no-repeat;
     background-size:5rem;
-    `
+`
     
     const Gallery = styled.div`
     display:flex;
     flex-direction:column;
-    `
+`
     
     const GalleryOne = styled.div`
     display:flex;
@@ -294,20 +290,21 @@ const ActivateButton = styled.button`
     background-color:#373f49;
     border-bottom:solid 1px #293037;
     letter-spacing: 2px;
-    `
+`
     
     const GalleryImg = styled.img`
     height:30vh;
     width:auto;
     background-position:cover;
     position:cover;
-    `
+`
     const GalleryImgThree = styled.img`
-    height:50vh;
+    height:60vh;
     width:auto;
+    margin:auto 15% auto auto;
     background-position:cover;
     position:cover;
-    `
+`
     
     const GalleryHeadOne = styled.h2`
     color:white;
@@ -316,7 +313,7 @@ const ActivateButton = styled.button`
     font-size:2.5rem;
     letter-spacing:2px;
     width:75%;
-    `
+`
     
     const GalleryParOne = styled.p`
     color:white;
@@ -324,7 +321,7 @@ const ActivateButton = styled.button`
     font-size:1.6rem;
     letter-spacing:2px;
     width:75%;
-    `
+`
     
     const GalleryTwo = styled.div`
     display:flex;
@@ -334,7 +331,7 @@ const ActivateButton = styled.button`
     width:100%;
     background-color:#2c333a;
     border-bottom:solid 1px #2c333a;
-    `
+`
     
     const GalleryHeadTwo = styled.h2`
     color:white;
@@ -343,7 +340,7 @@ const ActivateButton = styled.button`
     font-size:2.5rem;
     letter-spacing:2px;
     width:75%;
-    `
+`
     
     const GalleryParTwo = styled.p`
     color:white;
@@ -351,7 +348,7 @@ const ActivateButton = styled.button`
     font-size:1.6rem;
     letter-spacing:2px;
     width:75%;
-    `
+`
     
     const GalleryThree = styled.div`
     display:flex;
@@ -360,7 +357,7 @@ const ActivateButton = styled.button`
     flex-direction:row;
     width:100%;
     background-color:#21262c;
-    `
+`
     
     const GalleryHeadThree = styled.h2`
     color:white;
@@ -369,7 +366,7 @@ const ActivateButton = styled.button`
     font-size:2.5rem;
     letter-spacing:2px;
     width:75%;
-    `
+`
     
     const GalleryParThree = styled.p`
     color:white;
@@ -377,13 +374,13 @@ const ActivateButton = styled.button`
     font-size:1.6rem;
     letter-spacing:2px;
     width:75%;
-    `
+`
     
     const GalleryTextSpan = styled.span`
     display:flex;
     flex-direction:column;
     margin-left:8rem;
-    `
+`
     
     const BottomDiv = styled.div`
     display:flex;
@@ -392,7 +389,7 @@ const ActivateButton = styled.button`
     flex-direction:column;
     background-color: #51528F;
     padding:5rem;
-    `
+`
     
     const BottomDivHeadings = styled.h2`
     display:flex;
@@ -402,7 +399,7 @@ const ActivateButton = styled.button`
     letter-spacing: 2px;
     color:white;
     padding-bottom:2rem;
-    `
+`
     
     const BottomDivHeading = styled.h2`
     display:flex;
@@ -414,7 +411,7 @@ const ActivateButton = styled.button`
     padding-bottom:2rem;
     border-bottom:solid 1px #2c333a;
     width:75%;
-    `
+`
     
     const BottomDivPar = styled.p`
     display:flex;
@@ -425,7 +422,7 @@ const ActivateButton = styled.button`
     letter-spacing:2px;
     color:white;
     width:75%;
-    `
+`
     
     const BottomDivContent = styled.h2`
     display:flex;
@@ -434,7 +431,7 @@ const ActivateButton = styled.button`
     flex-wrap:wrap;
     letter-spacing: 2px;
     justify-content:center;
-    `
+`
     
     const BottomDivCard = styled.div`
     width:45%;
@@ -443,7 +440,7 @@ const ActivateButton = styled.button`
     text-align:center;
     background-color:#494a83;
     border: solid .1px #535493;
-    `
+`
     
     
     const FooterOptions = styled.div`
@@ -453,7 +450,7 @@ const ActivateButton = styled.button`
     padding: 3rem;
     background:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Ffruit%2Ffruit-08.jpg&f=1&nofb=1') no-repeat center;
     background-size:cover;
-    `
+`
     
     
     const FooterContent = styled.div`
@@ -463,7 +460,7 @@ const ActivateButton = styled.button`
     padding:6rem;
     margin-right:25%;
     color:white;
-    `
+`
     const FooterButtons = styled.div`
     display:flex;
     margin-left:25%;
@@ -474,12 +471,12 @@ const ActivateButton = styled.button`
     font-weight:bold;
     font-size:2.5rem;
     letter-spacing: 2px;
-    `
+`
     
     const FooterPar = styled.p`
     font-size:1.2rem;
     letter-spacing:2px;
-    `
+`
     
     const ActivateButtonFoot = styled.button`
     padding:15% 15%;
@@ -490,7 +487,7 @@ const ActivateButton = styled.button`
     color:white;
     border:none;
     border-radius:4px;
-    `
+`
     
     const LearnButton = styled.button`
     padding:8% 8%;
@@ -501,7 +498,7 @@ const ActivateButton = styled.button`
     color:white;
     border:none;
     border-radius:4px;
-    `
+`
     
     
     const Social = styled.div`
@@ -510,7 +507,7 @@ const ActivateButton = styled.button`
     display:flex;
     justify-content:center;
     
-    `
+`
     
     const Twitter = styled.button`
     border:white;
@@ -518,7 +515,7 @@ const ActivateButton = styled.button`
     margin:5rem;
     background:url('https://img.icons8.com/ios/72/twitter--v1.png') center;
     background-size:2rem;
-    `
+`
     
     const Facebook = styled.button`
     border:white;
@@ -526,7 +523,7 @@ const ActivateButton = styled.button`
     margin:5rem;
     background:url('https://img.icons8.com/ios/72/facebook-new.png') center;
     background-size:2rem;
-    `
+`
     
     const Instagram = styled.button`
     border:white;
@@ -534,7 +531,7 @@ const ActivateButton = styled.button`
     margin:5rem;
     background:url('https://img.icons8.com/ios/72/instagram-new--v1.png') center;
     background-size:2rem;
-    `
+`
     
     const Dribbble = styled.button`
     border:white;
@@ -543,7 +540,7 @@ const ActivateButton = styled.button`
     background:url('https://img.icons8.com/ios/72/dribbble-circled--v1.png') center;
     background-size:2rem;
     
-    `
+`
     
     
     const Email = styled.button`
@@ -552,4 +549,4 @@ const ActivateButton = styled.button`
     margin:5rem;
     background:url('https://img.icons8.com/ios/72/email.png') center;
     background-size:2rem;
-    `
+`

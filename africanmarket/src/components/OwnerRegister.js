@@ -211,7 +211,6 @@ const OwnerRegister = () => {
                 </OwnerOnly>
 
                 <OwnerOnly>
-
                         <H2>Category:</H2>
                             <Input
                             placeholder="Category"
@@ -220,7 +219,6 @@ const OwnerRegister = () => {
                             value={formValues.store_category}
                             onChange={handleChange}
                             />
-
                 </OwnerOnly>
                 
               </BottomInputSection>

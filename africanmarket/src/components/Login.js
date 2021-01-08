@@ -114,104 +114,102 @@ export default Login;
 
 
 const Form = styled.form`
-display:flex;
-flex-direction:column;
-background-color:#55AFA5;
-
-
+  display:flex;
+  flex-direction:column;
+  background-color:#55AFA5;
 `
 const Heading = styled.h1`
-border-top:2px solid white;
-border-bottom:2px solid white;
-width:75%;
-padding:2%;
-color:white;
-font-size:45px;
-margin: 5rem auto;
+  border-top:2px solid white;
+  border-bottom:2px solid white;
+  width:75%;
+  padding:2%;
+  color:white;
+  font-size:45px;
+  margin: 5rem auto;
 `
 
 const HeadingContainer = styled.div`
- background:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Ffruit%2Ffruit-08.jpg&f=1&nofb=1') no-repeat center;
-    width:auto;
-    padding:15%;
-    background-size:cover;
+  background:url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fweknowyourdreams.com%2Fimages%2Ffruit%2Ffruit-08.jpg&f=1&nofb=1') no-repeat center;
+  width:auto;
+  padding:15%;
+  background-size:cover;
 `
 
 const Select = styled.select`
-padding:1.5%;
-margin: 0 auto;
-width:25%;
+  padding:1.5%;
+  margin: 0 auto;
+  width:25%;
 `
 
 const Input = styled.input`
-padding:1.5% 0;
-margin: 0 auto;
-margin-top:5%;
-width:25%;
+  padding:1.5% 0;
+  margin: 0 auto;
+  margin-top:5%;
+  width:25%;
 
 `
 
 const H2 = styled.h2`
-border-bottom:1px solid black;
-width:25%;
-margin: 5rem auto 1.5rem auto;
+  border-bottom:1px solid black;
+  width:25%;
+  margin: 5rem auto 1.5rem auto;
 `
 
 const Button = styled.button `
-padding:1.5%;
-width:10%;
-margin: 1.5% auto 4.5% auto;
-background-color:#DE6852;
-color:white;
-border:none;
-border-radius:4px;
+  padding:1.5%;
+  width:10%;
+  margin: 1.5% auto 4.5% auto;
+  background-color:#DE6852;
+  color:white;
+  border:none;
+  border-radius:4px;
 `
 const Social = styled.div`
-background-color:#2c333a;
-padding:6rem;
-display:flex;
-justify-content:center;
+  background-color:#2c333a;
+  padding:6rem;
+  display:flex;
+  justify-content:center;
 
 `
 
 const Twitter = styled.button`
-border:white;
-padding:1rem;
-margin:5rem;
-background:url('https://img.icons8.com/ios/72/twitter--v1.png') center;
-background-size:2rem;
+  border:white;
+  padding:1rem;
+  margin:5rem;
+  background:url('https://img.icons8.com/ios/72/twitter--v1.png') center;
+  background-size:2rem;
 `
 
 const Facebook = styled.button`
-border:white;
-padding:1rem;
-margin:5rem;
-background:url('https://img.icons8.com/ios/72/facebook-new.png') center;
-background-size:2rem;
+  border:white;
+  padding:1rem;
+  margin:5rem;
+  background:url('https://img.icons8.com/ios/72/facebook-new.png') center;
+  background-size:2rem;
 `
 
 const Instagram = styled.button`
-border:white;
-padding:1rem;
-margin:5rem;
-background:url('https://img.icons8.com/ios/72/instagram-new--v1.png') center;
-background-size:2rem;
+  border:white;
+  padding:1rem;
+  margin:5rem;
+  background:url('https://img.icons8.com/ios/72/instagram-new--v1.png') center;
+  background-size:2rem;
 `
 
 const Dribbble = styled.button`
-border:white;
-padding:1rem;
-margin:5rem;
-background:url('https://img.icons8.com/ios/72/dribbble-circled--v1.png') center;
-background-size:2rem;
+  border:white;
+  padding:1rem;
+  margin:5rem;
+  background:url('https://img.icons8.com/ios/72/dribbble-circled--v1.png') center;
+  background-size:2rem;
 
 `
 
 
 const Email = styled.button`
-border:white;
-padding:1rem;
-margin:5rem;
-background:url('https://img.icons8.com/ios/72/email.png') center;
-background-size:2rem;
+  border:white;
+  padding:1rem;
+  margin:5rem;
+  background:url('https://img.icons8.com/ios/72/email.png') center;
+  background-size:2rem;
 `
