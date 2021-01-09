@@ -97,7 +97,7 @@ const Login = (props) => {
                     <option value="1">Customer</option>
                 </Select>
 
-                <Button type='submit'>Submit</Button>
+                <Button>Submit</Button>
 
                 <Social>
                   <Twitter/>
