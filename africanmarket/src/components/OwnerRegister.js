@@ -64,16 +64,20 @@ const OwnerRegister = () => {
   const submit = (e) => {
     e.preventDefault();
     const submitValues = {
-      store_name: formValues.store_name,
       username: formValues.username,
       password: formValues.password,
-      store_category: "",
     };
     
+    const submitValuesOwner = {
+      username: formValues.username,
+      password: formValues.password,
+      store_name: formValues.store_name,
+      store_category: formValues.store_category
+    }
     if (formValues.roleId === "1") {
       axios
         .post(
-          "https://food-truck-trackr-api.herokuapp.com/api/user",
+          "https://bw-african-marketplace-app.herokuapp.com/api/register/user",
           submitValues
         )
         .then((res) => {
@@ -85,7 +89,7 @@ const OwnerRegister = () => {
           console.log(loginValues);
           axios
             .post(
-              "https://food-truck-trackr-api.herokuapp.com/api/auth/login",
+              "https://bw-african-marketplace-app.herokuapp.com/api/login/user",
               loginValues
             )
             .then((res) => {
@@ -105,19 +109,19 @@ const OwnerRegister = () => {
     if (formValues.roleId === "2") {
       axios
         .post(
-          "https://bw-african-marketplace-app.herokuapp.com/api/auth/register/owner",
-          submitValues
+          "https://bw-african-marketplace-app.herokuapp.com/api/register/owner",
+          submitValuesOwner
         )
         .then((res) => {
           console.log(res);
           const loginValues = {
-            username: submitValues.username,
-            password: submitValues.password,
+            username: submitValuesOwner.username,
+            password: submitValuesOwner.password,
           };
           console.log(loginValues);
           axios
             .post(
-              "https://bw-african-marketplace-app.herokuapp.com/api/auth/login",
+              "https://bw-african-marketplace-app.herokuapp.com/api/login/owner",
               loginValues
             )
             .then((res) => {
@@ -193,7 +197,7 @@ const OwnerRegister = () => {
 
                   {/* {formValues.roleId ? 2 : <OwnerOnly id='hidden' />} */}
 
-                  <Button disabled={disabled}>Submit</Button>
+                  
 
                 </TopInputSection>
 
@@ -221,8 +225,8 @@ const OwnerRegister = () => {
                             onChange={handleChange}
                             />
 
-                </OwnerOnly>
-                
+                </OwnerOnly><br></br>
+                <Button>Submit</Button>
               </BottomInputSection>
 
               <Social>
