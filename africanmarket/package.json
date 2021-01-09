@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.6.0",
     "axios": "^0.21.1",
     "browser-router": "^0.2.0",
+    "build": "^0.1.4",
     "components": "^0.1.0",
     "react": "^17.0.1",
     "react-burger-menu": "^3.0.3",
